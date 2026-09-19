@@ -20,6 +20,12 @@ IMPLEMENTED_BY: slscm-hive (Fallback Mode, explicitly authorized)
 - Data-copy verification confirms every processed JSON file matches its frontend copy.
 - `git diff --check` completed without whitespace errors.
 
-## Note
+## OmniBrowser Interaction And Visual Verification
 
-The available in-app browser runtime reported no browser available, so visual viewport inspection could not be automated. Build and static integrity checks passed.
+- Tested the live portal through Chrome CDP on port `17082` using `scripts/cdp_controller.py`.
+- Year filters returned the expected data partitions: 2026 (10 records) and 2025 (9 records).
+- Type filters rendered the expected 2025 subsets: Q1 Journal (5 records) and Conference (3 records).
+- The Green Transportation pillar returned 6 matching records across 2025-2026.
+- The `drone` instant-search query reduced the vault to its matching drone publication.
+- Opened a publication's BibTeX dialog and confirmed the clipboard action changed to `Da sao chep!` feedback.
+- Captured the live visual proof at `web/preview_verified.png` (2704 x 1512 PNG).
