@@ -1,0 +1,287 @@
+{
+  "kind": "omnibrowser.semantic_sitemap",
+  "schema_version": 1,
+  "url": "http://127.0.0.1:5173/",
+  "domain": "127.0.0.1",
+  "path": "/",
+  "normalized_path": "_root",
+  "updated_at": 1789858497.170492,
+  "interactive_elements": [
+    {
+      "role": "link",
+      "name": "minhvd@neu.edu.vn",
+      "ref": "f0.d1.n1",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "SL SLSCM Lab Smart Logistics & Supply Chain · NEU",
+      "ref": "f0.d1.n2",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "Explore facebook.com/slscm.lab",
+      "ref": "f0.d1.n3",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "Research",
+      "ref": "f0.d1.n4",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "Projects",
+      "ref": "f0.d1.n5",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "Publications Vault",
+      "ref": "f0.d1.n6",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "People",
+      "ref": "f0.d1.n7",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "Lab Life",
+      "ref": "f0.d1.n8",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "Join Lab",
+      "ref": "f0.d1.n9",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "Explore Research",
+      "ref": "f0.d1.n10",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "Open Research Vault",
+      "ref": "f0.d1.n11",
+      "value": null
+    },
+    {
+      "role": "textbox",
+      "name": "Search scientific publications",
+      "ref": "f0.d1.n12",
+      "value": "drone"
+    },
+    {
+      "role": "link",
+      "name": "Read Publication",
+      "ref": "f0.d1.n13",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "Visit Fanpage",
+      "ref": "f0.d1.n14",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "Visit Fanpage",
+      "ref": "f0.d1.n15",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "Visit Fanpage",
+      "ref": "f0.d1.n16",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "Visit Fanpage",
+      "ref": "f0.d1.n17",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "Research",
+      "ref": "f0.d1.n18",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "Projects",
+      "ref": "f0.d1.n19",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "Publications Vault",
+      "ref": "f0.d1.n20",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "People",
+      "ref": "f0.d1.n21",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "Lab Life",
+      "ref": "f0.d1.n22",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "FDA · NEU",
+      "ref": "f0.d1.n23",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "Facebook Fanpage",
+      "ref": "f0.d1.n24",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "Campus Map P1613",
+      "ref": "f0.d1.n25",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "minhvd@neu.edu.vn",
+      "ref": "f0.d1.n26",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "minhhoang.ha@vnu.edu.vn",
+      "ref": "f0.d1.n27",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "quytd@neu.edu.vn",
+      "ref": "f0.d1.n28",
+      "value": null
+    },
+    {
+      "role": "button",
+      "name": "Submit Inquiry",
+      "ref": "f0.d1.n29",
+      "value": null
+    },
+    {
+      "role": "button",
+      "name": "All",
+      "ref": "f0.d1.n30",
+      "value": null
+    },
+    {
+      "role": "button",
+      "name": "2026",
+      "ref": "f0.d1.n31",
+      "value": null
+    },
+    {
+      "role": "button",
+      "name": "2025",
+      "ref": "f0.d1.n32",
+      "value": null
+    },
+    {
+      "role": "button",
+      "name": "All",
+      "ref": "f0.d1.n33",
+      "value": null
+    },
+    {
+      "role": "button",
+      "name": "Q1 Journal",
+      "ref": "f0.d1.n34",
+      "value": null
+    },
+    {
+      "role": "button",
+      "name": "Conference",
+      "ref": "f0.d1.n35",
+      "value": null
+    },
+    {
+      "role": "button",
+      "name": "Book Chapter",
+      "ref": "f0.d1.n36",
+      "value": null
+    },
+    {
+      "role": "button",
+      "name": "All",
+      "ref": "f0.d1.n37",
+      "value": null
+    },
+    {
+      "role": "button",
+      "name": "Operations & Algorithms",
+      "ref": "f0.d1.n38",
+      "value": null
+    },
+    {
+      "role": "button",
+      "name": "Data Science & AI",
+      "ref": "f0.d1.n39",
+      "value": null
+    },
+    {
+      "role": "button",
+      "name": "Green Logistics",
+      "ref": "f0.d1.n40",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "Open DOI for A Hybrid Genetic Search for Energy-Aware Multi-Trip Drone Routing with Time-Windows",
+      "ref": "f0.d1.n67",
+      "value": null
+    },
+    {
+      "role": "button",
+      "name": "BibTeX",
+      "ref": "f0.d1.n68",
+      "value": null
+    },
+    {
+      "role": "link",
+      "name": "minhvd@neu.edu.vn",
+      "ref": "f0.d1.n79",
+      "value": null
+    },
+    {
+      "role": "textbox",
+      "name": "FULL NAME",
+      "ref": "f0.d1.n80",
+      "value": null
+    },
+    {
+      "role": "textbox",
+      "name": "EMAIL ADDRESS",
+      "ref": "f0.d1.n81",
+      "value": null
+    },
+    {
+      "role": "combobox",
+      "name": "INTENDED TRACKUndergraduate Research AssistantGraduate / Ph.D. CandidateIndustry Research Partnership",
+      "ref": "f0.d1.n82",
+      "value": "Undergraduate Research Assistant"
+    }
+  ]
+}
