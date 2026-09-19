@@ -1,0 +1,900 @@
+SLSCM – KHOA KHOA HỌC DỮ LIỆU VÀ TRÍ TUỆ NHÂN TẠO – NCT – NEU
+Search for:
+Search
+Giới thiệu
+Thông tin Khoa
+Đội ngũ cán bộ giảng viên
+Hội đồng Khoa
+Ban cố vấn Học thuật
+Ban cố vấn Doanh nghiệp
+Đào tạo
+Đào tạo đại học
+Khoa học dữ liệu trong Tài chính và Thương mại điện tử
+Trí tuệ nhân tạo
+Công nghệ Logistics và Quản trị chuỗi cung ứng
+Đào tạo ngắn hạn
+Khóa học Trí tuệ Kinh doanh
+Tin tức
+Nghiên cứu
+Labs
+Lab Quản trị logistics & chuỗi cung ứng thông minh
+Lab Truyền thông và Công nghệ dữ liệu
+Lab Phân tích dữ liệu và tối ưu hóa
+Lab Trí tuệ nhân tạo trong kinh doanh
+Lab Nghiên cứu và chuyển giao công nghệ Khoa học dữ liệu và Trí tuệ nhân tạo
+Công trình khoa học
+Tuyển sinh
+Tin tuyển sinh
+Hỏi đáp về Tuyển sinh 2026
+Chatbot tư vấn tuyển sinh 2026
+Đơn vị đối tác
+Chuyển giao công nghệ
+Góc sinh viên FDA
+Việc làm
+Home
+SLSCM
+SLSCM
+SLSCM
+20/03/2025
+2026-04-08 0:35
+SLSCM
+LAB QUẢN TRỊ LOGISTICS VÀ CHUỖI CUNG ỨNG THÔNG MINH
+P1613, Tòa nhà a1, trường công nghệ, đại học kinh tế quốc dân – 207 giải phóng, hn.
+Giới thiệu
+Lab Quản trị Logistics và Chuỗi cung ứng thông minh (Smart Logistics and Supply Chain Management Lab – SLSCM Lab) là nhóm nghiên cứu trực thuộc Trường Công nghệ, Đại học Kinh tế Quốc dân, do
+TS. Vũ Đức Minh
+phụ trách. Lab được định hướng phát triển thành một môi trường nghiên cứu và học thuật năng động, tập trung vào việc ứng dụng
+tối ưu hóa, trí tuệ nhân tạo và khoa học dữ liệu
+nhằm giải quyết các bài toán thực tiễn trong logistics, quản trị chuỗi cung ứng và quản lý vận hành. Bên cạnh lĩnh vực cốt lõi là logistics và supply chain, Lab cũng thúc đẩy các hướng nghiên cứu ra quyết định liên ngành trong sản xuất, tài chính, y tế và các hệ thống dịch vụ thông minh.
+SLSCM Lab hiện quy tụ đội ngũ gồm
+6 giảng viên và nhà nghiên cứu
+, trong đó có
+1 Phó Giáo sư, 2 Tiến sĩ, 2 nghiên cứu sinh và 1 Thạc sĩ
+, cùng với các sinh viên xuất sắc đến từ Đại học Kinh tế Quốc dân, Đại học Bách Khoa Hà nội, Trường Đại học Khoa học Tự nhiên, v.v. Các giảng viên và nghiên cứu viên của Lab có kinh nghiệm học tập, nghiên cứu và làm việc tại nhiều cơ sở đào tạo, nghiên cứu uy tín trong và ngoài nước. Đây là nền tảng quan trọng để Lab xây dựng nhóm nghiên cứu mạnh, phát triển các công trình có chất lượng học thuật cao, đồng thời gắn kết chặt chẽ giữa nghiên cứu, đào tạo và ứng dụng thực tiễn.
+Về chuyên môn, SLSCM Lab tập trung vào ba nhóm hướng nghiên cứu chính:
+phân tích và thiết kế thuật toán cho các bài toán tối ưu vận hành
+như định tuyến, lập lịch và packing;
+nghiên cứu các thuật toán tối ưu hóa ứng dụng trong khoa học dữ liệu và học máy
+; và
+xây dựng các mô hình vận tải hiện đại trong chuỗi cung ứng
+, đặc biệt là các bài toán có sự tham gia của
+máy bay không người lái và xe điện
+. Với định hướng đó, Lab không chỉ hướng tới việc công bố các kết quả nghiên cứu có giá trị mà còn mong muốn trở thành nơi ươm mầm cho sinh viên yêu thích nghiên cứu, phát triển năng lực phân tích, tư duy mô hình hóa và giải quyết các vấn đề thực tiễn bằng công nghệ hiện đại.
+Không chỉ định hướng đào tạo và nghiên cứu học thuật, SLSCM Lab còn từng bước khẳng định năng lực chuyên môn thông qua nhiều công bố trên các
+tạp chí quốc tế uy tín
+và các hội nghị học thuật lớn. Các công trình của Lab xuất hiện trên nhiều diễn đàn và tạp chí có chất lượng cao như
+INFORMS Journal on Computing
+,
+European Journal of Operational Research
+,
+International Transactions in Operational Research
+,
+Journal of the Operational Research Society
+,
+Neurocomputing
+,
+Computer Standards & Interfaces
+, và
+Energy Research & Social Science
+.
+Bên cạnh thành tích nghiên cứu, SLSCM Lab cũng là môi trường nuôi dưỡng và phát triển các tài năng trẻ. Nhiều thành viên và sinh viên của Lab đã đạt được các kết quả nổi bật như
+thủ khoa toàn trường
+,
+thủ khoa chương trình
+, và đặc biệt là nhận
+học bổng nghiên cứu sinh
+tại các cơ sở đào tạo quốc tế như
+Singapore Management University
+,
+Liverpool John Moores University
+,
+University of Connecticut (Hoa Kỳ), v.v.
+. Những kết quả này cho thấy Lab không chỉ tạo ra sản phẩm nghiên cứu có giá trị mà còn góp phần xây dựng một cộng đồng học thuật có năng lực hội nhập quốc tế, sẵn sàng tiếp tục phát triển ở những môi trường nghiên cứu hàng đầu.
+Với định hướng đó, SLSCM Lab hướng tới trở thành một trung tâm nghiên cứu mạnh về
+logistics thông minh, tối ưu hóa vận hành và AI ứng dụng
+, nơi kết nối giữa nghiên cứu hàn lâm, đào tạo sinh viên và hợp tác với doanh nghiệp. Lab mong muốn tiếp tục phát triển các công trình có tác động học thuật và thực tiễn, đồng thời là nơi ươm mầm cho các thế hệ sinh viên, học viên và nhà nghiên cứu trẻ yêu thích tư duy phân tích, mô hình hóa và đổi mới sáng tạo.
+Các hướng nghiên cứu​
+- Tối ưu hóa vận tải và logistics
+- Quản lý chuỗi cung ứng thông minh
+- Ứng dụng trí tuệ nhân tạo trong vận tải và chuỗi cung ứng
+- Các giải pháp tối ưu, vận trù học và trí tuệ nhân tạo cho các bài toán trong lĩnh vực kinh tế, kinh doanh, khoa học dữ liệu và trí tuệ nhân tạo
+Các công trình nghiên cứu tiêu biểu​
+All years
+2026
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2007
+0000
+All types
+Journal Articles
+Books
+Conferences
+Book Sections
+Proceedings Articles
+All authors
+Abdu, Tedros Salih
+Adam, Abuzar Babikir Mohammad
+Almahmoud, Zaid
+Alsenwi, Madyan
+Anh, Nguyễn Kim
+Anh, Pham Tuan
+Archetti, Claudia
+Baumeister, Dorothea
+Besson, Jérémy
+Boland, Natashia
+Boulicaut, Jean-François
+Boulicaut, Jean-François.
+Bouveret, Sylvain
+Bui, Van-Hai
+Buttelli, O.
+Cerf, Loïc
+Chatzinotas, S.
+Chatzinotas, Symeon
+Chien, T. Van
+Chien, Trinh Van
+Choi, J.
+Chu, Ngoc Chien
+Cong, Nguyen Duc
+Crainic, Teodor Gabriel
+Crandall, Jacob W.
+Cuong, N. T.
+Dac, Tu Ho
+Dang, T. L.
+Dang, Thanh Loi
+Dang, Thu Huong
+Dang, Viet-Hung
+Dao, Duy-Phuong
+Demir, Emrah
+Desport, Pierre
+Dinh, D. K.
+Dinh, Dao Lan Vy
+Dinh, Duy Khanh
+DINH, Hieu TRAN
+Dinh, N. Q.
+Dinh, Quy Ta
+Dinh, V. -S.
+Dinh, Viet Sang
+Do, Duc Dong
+Do, T. -D.
+Do, T. H.
+Do, Tien Dung
+Doan, Truong Cong
+Dong, Gang Thep
+Duc, Bui Minh
+Duong, Hieu V.
+Duong, P. G.
+Duong, V. -H.
+Duong, V. H.
+Duong, Viet Hung
+Elbassioni, Khaled
+Elbassioni, Khaled M.
+Eldar, Y. C.
+Faris, Hossam
+Feng, Shaohan
+Garg, Harish
+Ghaoui, Laurent El
+Gian, T. D.
+Gian, T.
+Gian, Toan
+Giang, D. P.
+Giang, Vu Thai
+Hà, Minh Hoàng
+Ha, Viet Khanh
+Ha, Vu Thanh Dat
+Hanh, N. T. H.
+Hanzo, L.
+Heinen, Tobias
+Hewitt, Mark
+Hewitt, Mike
+Ho, Tu Dac
+Ho, X. N.
+Hoai, Nguyen Xuan
+Hoan, Nguyen Ba
+Hoang, Binh-Minh
+Hoang, D. -Y.
+Hoang, M. T.
+Hoang, Nguyen Thanh
+Hoang, T. M.
+Tien Mai Hoang Giang Pham, Thuy Anh Ta
+Hong, Le Thanh
+Hung, M. P. Q.
+Hung, N. Q.
+Hussain, Akhtar
+Huu, Tuong Tu
+Huy, P. T.
+Huy, Pham T.
+Huy, Vu Quoc
+Huynh, Nguyen Van
+Huynh, V. -T.
+Hy, N. D.
+Karapetyan, Areg
+Kergosien, Yannick
+Khanh, Tran Ngoc
+Kho, B. -G.
+Kim, Dong In
+Kim, S. -H.
+Kim, Seung-Won
+Kim, Soo-Hyung
+Ko, Y.
+Lagunas, Eva
+Lai, T. D.
+Lam, V. D.
+Lan, Dang Thu
+Lang, Jérôme
+Langevin, André
+Le, A. -T.
+Le, A. S.
+Le, Anh Duc
+Le, Ba Luat
+Le, H. T.
+Le, Hoang-Minh
+Le, M. -T.
+Le, M. T.
+Le, Q. -T.
+Le, Quang Toan
+Le, T. -T. H.
+Le, T. T. H.
+Le, Thanh Tuan
+Le, Thi Thanh Huyen
+Le, Thi-Hong
+Lin, Xingqin
+Liu, D.
+Liu, Y.
+Long, N. T.
+Long, Nguyen Quoc
+Luong, A. T.
+Luong, Anh Tuan
+Luong, L. T.
+Luong, N. C.
+Luong, Nguyen Cong
+Luong, T. V.
+Luong, Thanh Long
+Luong, Thien V.
+Luong, Thien Van
+Luu, G. T.
+Ly, H. H.
+Mai, H. A.
+Mai, Q. D.
+Mai, Tien
+Martin, Layla
+Martinelli, Rafael
+Matthaiou, M.
+Maunder, R. G.
+May, Vo Huyen Khanh
+McDermott, James
+Mendoza, Jorge E.
+Minh, Le Hoang
+Minh, Tran Duc
+Minh, Vu Duc
+Mirjalili, Seyedali
+Nga, D. T. N.
+Ngân, Nguyễn Thị Kim
+Ngo, Dien Hy
+Ngo, H. Q.
+Ngo, N. -D.
+Ngo, V. -D.
+Ngo, V. D.
+Ngo, Vu-Duc
+Nguyen, B. -S.
+Nguyen, Ba Sy
+Nguyen, C. C.
+Nguyen, Cong T.
+Nguyen, D. -Q.
+Nguyen, D. H.
+Nguyen, D.
+Nguyen, D. Q.
+Nguyen, Dinh-Cong
+Nguyen, Duc Quyen
+Nguyen, H. -H.
+Nguyen, H. A.
+Nguyen, H. H.
+Nguyen, H. S. P.
+Nguyen, H. T.
+Nguyen, Hoai-Xuan
+Nguyen, Huy-Quang
+Nguyen, K. -N. T.
+Nguyen, Kim-Ngan T
+Nguyen, Kim-Ngan T.
+Nguyen, M. -N. T.
+Nguyen, Minh-Duc
+Nguyen, Minh-Ngoc T.
+Nguyen, N. V.
+Nguyen, Ngoc Anh Thi
+Nguyen, Ngoc Doanh
+Nguyen, Nhan-Tam
+Nguyen, P. T.
+Nguyen, Phuong Hoai Ngoc
+Nguyen, Q. H.
+Nguyen, Q. K.
+Nguyen, Quang
+Nguyen, Quang Uy
+Nguyen, T. -C.
+Nguyen, T. -H.
+Nguyen, T. -N.
+Nguyen, T. C.
+Nguyen, T. T.
+Nguyen, T. T. V.
+Nguyen, Tat Dat
+Nguyen, Thi Phuoc Van
+Nguyen, Thi Phuong Thao
+Nguyen, Thi Thu Trang
+Nguyen, Tien Cuong
+Nguyen, Tien Hoa
+Nguyen, Tien-Cuong
+Nguyen, Tien-Hoa
+Nguyen, Trong-Hieu
+Nguyen, Trong-Nghia
+Nguyen, Trung Tan
+Nguyen, Trung Thanh
+Nguyen, V. -D.
+Nguyen, V. -H.
+Nguyen, Van Thang
+Nguyen, Vinh-Van
+Nguyen, Xuan Hoai
+Nguyen-Ngoc, D.
+Nguyen-Ngoc, Doanh
+Nguyen-Thi-Mai, Anh
+Niyato, D.
+Niyato, Dusit
+O'Neill, Michael
+Ottersten, B.
+Pan, Zhenni
+Petropoulos, P.
+Pham, Anh-Tuan
+Pham, Canh V.
+Pham, D. -H.
+Pham, Duc Hao
+Pham, Duy-Phuong
+Pham, Gia Nguyen
+Pham, H. -H.
+Pham, Huy Hoang
+Pham, M. K.
+Pham, N. -H.
+Pham, Ngoc-Hung
+Pham, Phuong N. H.
+Pham, Quang Anh
+Pham, Tu-San
+Pham, Tuan Anh
+Pham, V. -C.
+Pham, V. N.
+Pham, Van-Cuong
+Pham, Van-Quan
+Pham, Viet Ngoc
+Phan, A. D.
+Phan, Anh D.
+Phan, H. D.
+Phan, H. M.
+Phan, Huong Duong
+Plantevit, Marc
+Plantevit, Marc.
+Quan, Nguyen Minh
+Quân, Trần Duy
+Quang, D. N.
+Quang, Đào Thị Huệ Tạ Quang Chiểu Đinh Nhật
+Quang, Dinh Nhat
+Que, N. T.
+Que, Ngo T.
+Quoc, Hai Le
+Ravier, P.
+Roos, Magnus
+Roozbehani, Mardavij
+Rosati, Roberto Maria
+Rothe, Jörg
+Rousseau, Louis-Martin
+Saffidine, Abdallah
+Sanguanpong, Surasak
+Saputra, Yuris Mulya
+Savelsbergh, Martin W. P.
+Schaerf, Andrea
+Shaohan, F.
+Shimamoto, Shigeru
+Shin, Ji-Eun
+Shlezinger, N.
+Snášel, Václav
+So-In, Chakchai
+Sugiura, S.
+Ta, Dinh Quy
+Ta, Thuy Anh
+Ta-Dinh, Quy
+Tâm, Hồ Sỹ
+Thai, H. N.
+Thai, Hong Nam
+Thai, My T.
+Thanh, H. L. T.
+Thi-Thanh, Tam Ninh
+Thieu, Nguyen Van
+Tien, C. N.
+Tien, D. T.
+Toulouse, Michel
+Tran, A. T.
+Tran, Dinh-Hieu
+Tran, Duc Minh
+Tran, Duc-Dung
+Tran, Duc-Minh
+Tran, H.
+Tran, Hung
+Tran, Nam-Khanh
+Tran, Ngoc Hang
+Tran, Ngoc Son
+Tran, Ngoc-Son
+Tran, T. A.
+Tran, T.
+Tran, Tien Dat
+Tran, Trung Duc
+Tran, Truyen
+Tran, Tuan Huy
+Tran, Viet Hung
+Tran, Viet-Hong
+Tran, X. -N.
+Tran, X. N.
+Tran, Xuan-Nam
+Trang, M. X.
+Trang, Mai X.
+Trang, N. T.
+Trang, T. N. T.
+Trung, Le Huu
+Truong, Kien Trung
+Truong, V. D.
+Truong, Van Duy
+Truong, Van-Truong
+Tu, H. T.
+Tuan, Cuong Vuong
+Tung, Do Son
+Tuong, T. H.
+Ulziisaikhan, B.
+Uy, Nguyen Quang
+Van, Vo Nhan
+Vidal, Thibaut
+Vien, N. A.
+Viet, K. H.
+Vo, D. H. S.
+Vo, Van Nhan
+Voznak, Miroslav
+Vu, Duc D.
+Vu, Duc Minh
+Vu, Duc-Minh
+Vu, Giang Quynh Le
+Vu, H. T.
+Vu, H.
+Vu, Huan
+Vu, Huy Tuan
+Vu, N. T.
+Vu, Quoc Huy
+Vu, T.
+Vu, Tam
+Vu, Tien-Dzung
+Vuong, T. -C.
+Waheed, Nazar
+Wong, K. -S.
+Xiang, L.
+Xu, C.
+Xuan, Trang Mai
+Yang, Hyung-Jeong
+Yang, L. -L.
+Zhang, J.
+Zhang, X.
+Zhang, Xiao
+Zhao, Jingyi
+Zhu, K.
+19 entries
+«
+‹
+1 of 2
+›
+»
+2026
+19.
+Hà, Minh Hoàng;  Dang, Thu Huong;  Le, Ba Luat;  Nguyen, Trung Thanh;  Langevin, André
+On the Hierarchical Directed Capacitated Arc Routing Problem
+Journal Article
+In:
+Computers & Operations Research,
+vol. 192,
+2026
+,
+ISSN: 0305-0548
+.
+Links
+|
+BibTeX
+@article{Hà2026,
+title = {On the Hierarchical Directed Capacitated Arc Routing Problem},
+author = {Minh Hoàng Hà and Thu Huong Dang and Ba Luat Le and Trung Thanh Nguyen and André Langevin},
+doi = {10.1016/j.cor.2026.107495},
+issn = {0305-0548},
+year  = {2026},
+date = {2026-08-01},
+journal = {Computers & Operations Research},
+volume = {192},
+publisher = {Elsevier BV},
+keywords = {},
+pubstate = {published},
+tppubtype = {article}
+}
+Close
+doi:10.1016/j.cor.2026.107495
+Close
+18.
+Tien Mai Hoang Giang Pham, Thuy Anh Ta
+Beyond Homogeneous Adversaries: Stackelberg Security Games with Mixed Quantal Response
+Journal Article
+In:
+2026
+.
+Abstract
+|
+BibTeX
+@article{nokey,
+title = {Beyond Homogeneous Adversaries: Stackelberg Security Games with Mixed Quantal Response},
+author = {Hoang Giang Pham, Tien Mai, Thuy Anh Ta, Minh Hoàng Hà},
+year  = {2026},
+date = {2026-07-31},
+abstract = {The quantal response (QR) model is widely used in Stackelberg security games (SSGs) to capture boundedly rational adversaries. Existing work on SSGs under QR, however, almost exclusively assumes a homogeneous attacker population, ignoring heterogeneity in attacker preferences and rationality. We study SSG with mixed quantal response attackers, where the follower population consists of multiple discrete attacker types, each following a type-specific QR model. The defender allocates limited resources across targets, while an attacker drawn from this heterogeneous population observes the defender’s strategy and attacks a single target. This results in a highly non-convex equilibrium computation problem. We develop a polynomial-time approximation scheme (PTAS) for this setting when the number of attacker types is bounded, based on an exponential cone programming formulation combined with a carefully designed Branch-and-Bound procedure. Experiments demonstrate that our approach outperforms standard gradient-based methods and that explicitly modeling attacker heterogeneity yields significant gains over traditional SSG models with a single QR attacker.},
+keywords = {},
+pubstate = {published},
+tppubtype = {article}
+}
+Close
+The quantal response (QR) model is widely used in Stackelberg security games (SSGs) to capture boundedly rational adversaries. Existing work on SSGs under QR, however, almost exclusively assumes a homogeneous attacker population, ignoring heterogeneity in attacker preferences and rationality. We study SSG with mixed quantal response attackers, where the follower population consists of multiple discrete attacker types, each following a type-specific QR model. The defender allocates limited resources across targets, while an attacker drawn from this heterogeneous population observes the defender’s strategy and attacks a single target. This results in a highly non-convex equilibrium computation problem. We develop a polynomial-time approximation scheme (PTAS) for this setting when the number of attacker types is bounded, based on an exponential cone programming formulation combined with a carefully designed Branch-and-Bound procedure. Experiments demonstrate that our approach outperforms standard gradient-based methods and that explicitly modeling attacker heterogeneity yields significant gains over traditional SSG models with a single QR attacker.
+Close
+17.
+Le, Ba Luat;  Mai, Tien;  Ta, Thuy Anh;  Hà, Minh Hoàng;  Vu, Duc-Minh
+Competitive Facility Location Under Cross-Nested Logit Customer Choice Model: Hardness and Exact Approaches
+Journal Article
+In:
+INFORMS Journal on Computing,
+2026
+,
+ISSN: 1526-5528
+.
+Abstract
+|
+Links
+|
+BibTeX
+@article{Le2026,
+title = {Competitive Facility Location Under Cross-Nested Logit Customer Choice Model: Hardness and Exact Approaches},
+author = {Ba Luat Le and Tien Mai and Thuy Anh Ta and Minh Hoàng Hà and Duc-Minh Vu},
+doi = {10.1287/ijoc.2025.1150},
+issn = {1526-5528},
+year  = {2026},
+date = {2026-05-06},
+urldate = {2026-05-06},
+journal = {INFORMS Journal on Computing},
+publisher = {Institute for Operations Research and the Management Sciences (INFORMS)},
+abstract = {<jats:p>We study the competitive facility location problem, in which a firm aims to establish new facilities in a market already occupied by competitors. In this problem, customer behavior is a crucial factor in making optimal location decisions. We explore a general class of customer choice models, known as the cross-nested logit model, which is recognized for its flexibility and generality in predicting people’s choice behavior. To explore the problem, we first demonstrate that it is NP-hard even when there is only one customer class and the cross-nested structure has only two nests. To tackle the challenging facility location problem, we demonstrate that the objective function under a general cross-nested structure is not concave. Interestingly, we show that, by a change of variables, the objective function can be converted to a mixed-integer exponential cone convex program, enabling it to be solved to optimality via an outer approximation algorithm. Extensive experiments show the efficiency of our approach and provide analyses on the benefits of using the cross-nested model in the facility location context.</jats:p>
+<jats:p>History: Accepted by Andrea Lodi, Area Editor for Design & Analysis of Algorithms–Discrete.</jats:p>
+<jats:p>Funding: This work was supported by the Vingroup Innovation Foundation, Vietnam [Grant VINIF.2024.DA072].</jats:p>
+<jats:p>Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2025.1150 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2025.1150 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .</jats:p>},
+keywords = {},
+pubstate = {published},
+tppubtype = {article}
+}
+Close
+<jats:p>We study the competitive facility location problem, in which a firm aims to establish new facilities in a market already occupied by competitors. In this problem, customer behavior is a crucial factor in making optimal location decisions. We explore a general class of customer choice models, known as the cross-nested logit model, which is recognized for its flexibility and generality in predicting people’s choice behavior. To explore the problem, we first demonstrate that it is NP-hard even when there is only one customer class and the cross-nested structure has only two nests. To tackle the challenging facility location problem, we demonstrate that the objective function under a general cross-nested structure is not concave. Interestingly, we show that, by a change of variables, the objective function can be converted to a mixed-integer exponential cone convex program, enabling it to be solved to optimality via an outer approximation algorithm. Extensive experiments show the efficiency of our approach and provide analyses on the benefits of using the cross-nested model in the facility location context.</jats:p>
+<jats:p>History: Accepted by Andrea Lodi, Area Editor for Design & Analysis of Algorithms–Discrete.</jats:p>
+<jats:p>Funding: This work was supported by the Vingroup Innovation Foundation, Vietnam [Grant VINIF.2024.DA072].</jats:p>
+<jats:p>Supplemental Material: The software that supports the findings of this study is available within the paper and its Supplemental Information ( https://pubsonline.informs.org/doi/suppl/10.1287/ijoc.2025.1150 ) as well as from the IJOC GitHub software repository ( https://github.com/INFORMSJoC/2025.1150 ). The complete IJOC Software and Data Repository is available at https://informsjoc.github.io/ .</jats:p>
+Close
+doi:10.1287/ijoc.2025.1150
+Close
+16.
+Pham, Tuan Anh;  Ha, Minh Hoang;  Vu, Duc Minh;  Do, Duc Dong
+A Hybrid Genetic Search for Energy-Aware Multi-Trip Drone Routing with Time-Windows
+Book Section
+In:
+Ha, Minh Hoang;  Hop, Nguyen Van;  Doanh, Nguyen Ngoc;  Thanh, Binh Huynh Thi (Ed.):
+Optimization, Modeling, Simulation, and Analytics,
+vol. 235,
+Springer,
+Cham,
+2026
+, (Accepted for publication in COMOSA 2025 proceedings)
+.
+BibTeX
+@incollection{pham2026_hgs_drone_tw,
+title = {A Hybrid Genetic Search for Energy-Aware Multi-Trip Drone Routing with Time-Windows},
+author = {Tuan Anh Pham and Minh Hoang Ha and Duc Minh Vu and Duc Dong Do},
+editor = {Minh Hoang Ha and Nguyen Van Hop and Nguyen Ngoc Doanh and Binh Huynh Thi Thanh},
+year  = {2026},
+date = {2026-01-01},
+urldate = {2026-01-01},
+booktitle = {Optimization, Modeling, Simulation, and Analytics},
+volume = {235},
+publisher = {Springer},
+address = {Cham},
+series = {Springer Optimization and Its Applications},
+note = {Accepted for publication in COMOSA 2025 proceedings},
+keywords = {},
+pubstate = {published},
+tppubtype = {incollection}
+}
+Close
+15.
+Vu, Duc D.;  Hussain, Akhtar;  Vu, Duc-Minh;  Zhang, Xiao;  Bui, Van-Hai
+Designing effective demand response: A review of behavioral insights, consumer engagement, and operational strategies in energy systems
+Journal Article
+In:
+Energy Research & Social Science,
+vol. 131,
+pp. 104474,
+2026
+.
+Links
+|
+BibTeX
+@article{Vu2026DemandResponseReview,
+title = {Designing effective demand response: A review of behavioral insights, consumer engagement, and operational strategies in energy systems},
+author = {Duc D. Vu and Akhtar Hussain and Duc-Minh Vu and Xiao Zhang and Van-Hai Bui},
+doi = {10.1016/j.erss.2025.104474},
+year  = {2026},
+date = {2026-01-01},
+urldate = {2026-01-01},
+journal = {Energy Research & Social Science},
+volume = {131},
+pages = {104474},
+publisher = {Elsevier},
+keywords = {},
+pubstate = {published},
+tppubtype = {article}
+}
+Close
+doi:10.1016/j.erss.2025.104474
+Close
+14.
+Tran, Trung Duc;  Vu, Duc Minh;  Nguyen, Ngoc Doanh;  Pham, Gia Nguyen;  Ghaoui, Laurent El;  Ha, Minh Hoang
+Electric Vehicle Routing Problem with Time Windows and Station-Based or Route-Based Charging Options
+Book Section
+In:
+Ha, Minh Hoang;  Hop, Nguyen Van;  Doanh, Nguyen Ngoc;  Thanh, Binh Huynh Thi (Ed.):
+Optimization, Modeling, Simulation, and Analytics,
+vol. 235,
+Springer,
+Cham,
+2026
+, (Accepted for publication in COMOSA 2025 proceedings)
+.
+BibTeX
+@incollection{tran2026_evrptw_charging_options,
+title = {Electric Vehicle Routing Problem with Time Windows and Station-Based or Route-Based Charging Options},
+author = {Trung Duc Tran and Duc Minh Vu and Ngoc Doanh Nguyen and Gia Nguyen Pham and Laurent El Ghaoui and Minh Hoang Ha},
+editor = {Minh Hoang Ha and Nguyen Van Hop and Nguyen Ngoc Doanh and Binh Huynh Thi Thanh},
+year  = {2026},
+date = {2026-01-01},
+urldate = {2026-01-01},
+booktitle = {Optimization, Modeling, Simulation, and Analytics},
+volume = {235},
+publisher = {Springer},
+address = {Cham},
+series = {Springer Optimization and Its Applications},
+note = {Accepted for publication in COMOSA 2025 proceedings},
+keywords = {},
+pubstate = {published},
+tppubtype = {incollection}
+}
+Close
+13.
+Rosati, Roberto Maria;  Ta, Dinh Quy;  Ha, Minh Hoang;  Schaerf, Andrea
+Exact and Metaheuristic Approaches to Minimizing Makespan in Parallel Machine Scheduling with Conflicting Jobs
+Journal Article
+In:
+International Transactions in Operational Research,
+pp. 1–27,
+2026
+, (Version of record online: 15 February 2026)
+.
+Links
+|
+BibTeX
+@article{rosati2026_conflicting_jobs_itor,
+title = {Exact and Metaheuristic Approaches to Minimizing Makespan in Parallel Machine Scheduling with Conflicting Jobs},
+author = {Roberto Maria Rosati and Dinh Quy Ta and Minh Hoang Ha and Andrea Schaerf},
+doi = {10.1111/itor.70177},
+year  = {2026},
+date = {2026-01-01},
+urldate = {2026-01-01},
+journal = {International Transactions in Operational Research},
+pages = {1–27},
+note = {Version of record online: 15 February 2026},
+keywords = {},
+pubstate = {published},
+tppubtype = {article}
+}
+Close
+doi:10.1111/itor.70177
+Close
+12.
+Hong, Le Thanh;  Minh, Vu Duc;  Khanh, Tran Ngoc;  Cong, Nguyen Duc;  Trung, Le Huu
+A 2-Index Stage-Based Formulation and a Construct-Merge-Solve and Adapt Algorithm for the Flying Sidekick Traveling Salesman Problem
+Conference
+The 14th Conference on Information Technology and its Applications,
+vol. 1581,
+Lecture Notes in Networks and Systems
+Springer,
+Cham,
+2026
+.
+Links
+|
+BibTeX
+@conference{Hong2026FSTSPStageBased,
+title = {A 2-Index Stage-Based Formulation and a Construct-Merge-Solve and Adapt Algorithm for the Flying Sidekick Traveling Salesman Problem},
+author = {Le Thanh Hong and Vu Duc Minh and Tran Ngoc Khanh and Nguyen Duc Cong and Le Huu Trung},
+editor = {Ngoc Thanh Nguyen and Cong-Phap Huynh and Thanh Tung Nguyen and Nhien-An Le-Khac and Sokunthea Seng and Quoc Viet Nguyen},
+url = {https://doi.org/10.1007/978-3-032-00972-2_6},
+doi = {10.1007/978-3-032-00972-2_6},
+year  = {2026},
+date = {2026-01-01},
+urldate = {2026-01-01},
+booktitle = {The 14th Conference on Information Technology and its Applications},
+volume = {1581},
+publisher = {Springer},
+address = {Cham},
+series = {Lecture Notes in Networks and Systems},
+keywords = {},
+pubstate = {published},
+tppubtype = {conference}
+}
+Close
+https://doi.org/10.1007/978-3-032-00972-2_6
+doi:10.1007/978-3-032-00972-2_6
+Close
+11.
+Le, Ba Luat;  Mai, Tien;  Ta, Thuy Anh;  Ha, Minh Hoang;  Vu, Duc Minh
+Competitive Facility Location under Cross-Nested Logit Customer Choice Model: Hardness and Exact Approaches
+Journal Article
+In:
+INFORMS Journal on Computing,
+2026
+, (Accepted March 2026, to appear)
+.
+BibTeX
+@article{Le2026CFL_CNL,
+title = {Competitive Facility Location under Cross-Nested Logit Customer Choice Model: Hardness and Exact Approaches},
+author = {Ba Luat Le and Tien Mai and Thuy Anh Ta and Minh Hoang Ha and Duc Minh Vu},
+year  = {2026},
+date = {2026-01-01},
+urldate = {2026-01-01},
+journal = {INFORMS Journal on Computing},
+note = {Accepted March 2026, to appear},
+keywords = {},
+pubstate = {published},
+tppubtype = {article}
+}
+Close
+2025
+10.
+Zhao, Jingyi;  Archetti, Claudia;  Pham, Tuan Anh;  Vidal, Thibaut
+Large Neighborhood and Hybrid Genetic Search for Inventory Routing Problems
+Journal Article
+In:
+European Journal of Operational Research,
+2025
+, (In press, corrected proof; available online 25 November 2025)
+.
+Links
+|
+BibTeX
+@article{zhao2025_irp_hgs,
+title = {Large Neighborhood and Hybrid Genetic Search for Inventory Routing Problems},
+author = {Jingyi Zhao and Claudia Archetti and Tuan Anh Pham and Thibaut Vidal},
+doi = {10.1016/j.ejor.2025.11.021},
+year  = {2025},
+date = {2025-01-01},
+urldate = {2025-01-01},
+journal = {European Journal of Operational Research},
+note = {In press, corrected proof; available online 25 November 2025},
+keywords = {},
+pubstate = {published},
+tppubtype = {article}
+}
+Close
+doi:10.1016/j.ejor.2025.11.021
+Close
+19 entries
+«
+‹
+1 of 2
+›
+»
+Giải thưởng, thành tích của các thành viên trong Lab
+Lê Bá Luật
+Thủ khoa toàn trường – trường Công nghệ, Đại học Phenikaa (2025)
+Học bổng nghiên cứu sinh toàn phần tại Trường Đại học Quản lý Singapore (2026)
+Nguyễn Tất Đạt
+Học bổng nghiên cứu sinh toàn phần tại Trường Đại học Liverpool Moores (2025)
+Nguyễn Hải Thu
+Thủ khoa chương trình Định phí Bảo hiểm và Quản trị rủi ro – Khóa 63 – Đại học Kinh tế Quốc dân
+Học bổng nghiên cứu sinh tại Đại học Connecticut, Mỹ (2025)
+Các đề tài, dự án đã triển khai
+Phát triển mô hình và giải thuật cho bài toán Revisit Flying Sidekick Traveling Salesman Problem”, đề tài cơ sở, Đại học Kinh tế Quốc dân (2025 – nay)
+Các môn giảng dạy
+Thành viên
+Sinh viên
+Họ và tên
+Lớp
+Khoa
+Đại học
+Hà Thu Hà
+KHDL&TTNT
+Kinh tế Quốc dân
+Phùng Thị Thu Trang
+KHDL&TTNT
+Kinh tế Quốc dân
+Tạ Thành Đạt
+KHDL&TTNT
+Kinh tế Quốc dân
+Đặng Nhật Minh
+KHDL&TTNT
+Kinh tế Quốc dân
+Mai Thành Lộc
+Toán Kinh tế
+Kinh tế Quốc dân
+Lã Quang Chiến
+Toán Kinh tế
+Kinh tế Quốc dân
+Nguyệt Ánh
+Công nghệ Thông tin
+Kinh tế Quốc dân
+Nguyễn Trần Quốc Đạt
+Toán Kinh tế
+Kinh tế Quốc dân
+Lê Quốc Trần Anh
+Toán Kinh tế
+Kinh tế Quốc dân
+Hà Quang Minh
+Toán Kinh tế
+Kinh tế Quốc dân
+Các đối tác chính
+Nghiên cứu
+Gồm các nhà nghiên cứu, đồng nghiệp đến từ Anh (Cardiff University, Lancaster University, v.v.), Mỹ (Loyola University Chicago, Michigan University Flint), Pháp, Canada, Singapore (Singapore Management University, v.v.), Việt Nam (VinUni, HUS, HUST, Phenikaa Uni, v.v.)
+Thông tin liên hệ
+P.1604, Toà A1, Đại học KTQD - 207 Giải Phóng, P. Bạch Mai, TP. Hà Nội
+fda@neu.edu.vn
+(+84) 24 36 280 280
+Copyright © 2026 KHOA KHOA HỌC DỮ LIỆU VÀ TRÍ TUỆ NHÂN TẠO - NCT - NEU | Powered by CADA Lab
+Chatbot
+Giới thiệu
+Thông tin Khoa
+Đội ngũ cán bộ giảng viên
+Hội đồng Khoa
+Ban cố vấn Học thuật
+Ban cố vấn Doanh nghiệp
+Đào tạo
+Đào tạo đại học
+Khoa học dữ liệu trong Tài chính và Thương mại điện tử
+Trí tuệ nhân tạo
+Công nghệ Logistics và Quản trị chuỗi cung ứng
+Đào tạo ngắn hạn
+Khóa học Trí tuệ Kinh doanh
+Tin tức
+Nghiên cứu
+Labs
+Lab Quản trị logistics & chuỗi cung ứng thông minh
+Lab Truyền thông và Công nghệ dữ liệu
+Lab Phân tích dữ liệu và tối ưu hóa
+Lab Trí tuệ nhân tạo trong kinh doanh
+Lab Nghiên cứu và chuyển giao công nghệ Khoa học dữ liệu và Trí tuệ nhân tạo
+Công trình khoa học
+Tuyển sinh
+Tin tuyển sinh
+Hỏi đáp về Tuyển sinh 2026
+Chatbot tư vấn tuyển sinh 2026
+Đơn vị đối tác
+Chuyển giao công nghệ
+Góc sinh viên FDA
+Việc làm

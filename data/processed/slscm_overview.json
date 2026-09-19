@@ -1,0 +1,90 @@
+{
+  "name_en": "Smart Logistics and Supply Chain Management Lab",
+  "name_vi": "Lab Quản trị Logistics và Chuỗi cung ứng thông minh",
+  "abbreviation": "SLSCM Lab",
+  "affiliation": "Trường Công nghệ, Đại học Kinh tế Quốc dân (College of Technology - National Economics University, NEU)",
+  "address": "P1613, Tòa nhà A1, Đại học Kinh tế Quốc dân – 207 Giải Phóng, Hà Nội",
+  "head_of_lab": {
+    "name": "TS. Vũ Đức Minh",
+    "email": "minhvd@neu.edu.vn",
+    "title": "Trưởng phòng thí nghiệm / Giảng viên"
+  },
+  "team_structure": {
+    "total_faculty_researchers": 6,
+    "professors": 1,
+    "phd": 2,
+    "phd_students": 2,
+    "masters": 1,
+    "students": "Sinh viên xuất sắc từ NEU, HUST, VNU-HUS..."
+  },
+  "key_collaborators": [
+    {
+      "name": "PGS. TS. Hà Minh Hoàng",
+      "role": "Cố vấn khoa học / Nghiên cứu gia cao cấp"
+    },
+    {
+      "name": "ThS. Tạ Đình Quý",
+      "role": "Nghiên cứu viên / Nghiên cứu sinh"
+    },
+    {
+      "name": "Lê Bá Luật",
+      "role": "Tác giả bài báo / Nghiên cứu viên trẻ"
+    }
+  ],
+  "research_pillars": [
+    {
+      "id": "operational_optimization",
+      "title_vi": "Tối ưu hóa Vận hành & Thiết kế Thuật toán",
+      "title_en": "Operational Optimization & Algorithmic Design",
+      "description_vi": "Phân tích và thiết kế thuật toán chính xác & metaheuristic cho các bài toán định tuyến (VRP, FSTSP), lập lịch (machine scheduling, conflict jobs), packing và bài toán gom tập.",
+      "topics": [
+        "Vehicle Routing",
+        "Flying Sidekick TSP",
+        "Job Scheduling",
+        "Orienteering Problems"
+      ]
+    },
+    {
+      "id": "ml_optimization",
+      "title_vi": "Tối ưu hóa trong Khoa học Dữ liệu & Trí tuệ Nhân tạo",
+      "title_en": "Optimization in Data Science & Machine Learning",
+      "description_vi": "Nghiên cứu các thuật toán tối ưu phi đạo hàm (gradient-free), metaheuristics cho mạng nơ-ron (MetaPerceptron, GrafoRVFL), dự báo thị trường và hỗ trợ ra quyết định thông minh.",
+      "topics": [
+        "Metaheuristics",
+        "MetaPerceptron",
+        "GrafoRVFL",
+        "Time Series Forecasting"
+      ]
+    },
+    {
+      "id": "green_transportation",
+      "title_vi": "Mô hình Vận tải Hiện đại & Chuỗi Cung ứng Bền vững",
+      "title_en": "Modern Transportation & Green Supply Chain",
+      "description_vi": "Xây dựng mô hình chuỗi cung ứng thế hệ mới với sự tham gia của máy bay không người lái (drones/UAVs), xe điện sạc trạm/dọc đường (EVRP-TW), xe buýt trường học và bài toán vị trí cơ sở hạ tầng.",
+      "topics": [
+        "Drone Delivery",
+        "Electric Vehicle Routing",
+        "School Bus Rescheduling",
+        "Facility Location"
+      ]
+    }
+  ],
+  "hall_of_fame": {
+    "valedictorians": "Thủ khoa toàn trường, thủ khoa chương trình",
+    "phd_scholarships": [
+      "Singapore Management University (SMU)",
+      "Liverpool John Moores University (UK)",
+      "University of Connecticut (UConn, USA)"
+    ]
+  },
+  "official_kpi_2025": {
+    "internal_scientific_activities": 20,
+    "internal_training_sessions": 8,
+    "seminars_organized": 4,
+    "research_publication_events": 2
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/slscm.lab",
+    "website_fda": "https://fda.neu.edu.vn/slscm/"
+  }
+}

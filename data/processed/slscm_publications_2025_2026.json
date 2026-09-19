@@ -1,0 +1,90 @@
+[
+  {
+    "lab": "SLSCM Lab",
+    "type": "Tạp chí",
+    "title": "The rescheduling school bus routing problem under a constraint on the number of students with negative impact",
+    "venue": "Journal of the Operational Research Society",
+    "link": "https://www.tandfonline.com/doi/full/10.1080/01605682.2025.2519991",
+    "notes": ""
+  },
+  {
+    "lab": "SLSCM Lab",
+    "type": "Chương sách",
+    "title": "Exact approaches for scheduling problems on parallel identical machines with conflict job",
+    "venue": "Handbook of Combinatorial Optimization",
+    "link": "Exact Approaches for Scheduling Problems on Parallel Identical Machines with Conflict Jobs | Springer Nature Link",
+    "notes": ""
+  },
+  {
+    "lab": "SLSCM Lab",
+    "type": "Tạp chí",
+    "title": "MetaPerceptron: A standardized framework for metaheuristic-driven multi-layer perceptron optimization",
+    "venue": "Computer Standards & Interfaces",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S0920548925000066",
+    "notes": ""
+  },
+  {
+    "lab": "SLSCM Lab",
+    "type": "Tạp chí",
+    "title": "GrafoRVFL: A gradient-free optimization framework for boosting random vector functional link network",
+    "venue": "Neurocomputing",
+    "link": "https://www.sciencedirect.com/science/article/abs/pii/S092523122501570X",
+    "notes": ""
+  },
+  {
+    "lab": "SLSCM Lab",
+    "type": "Tạp chí",
+    "title": "The set team orienteering problem",
+    "venue": "European Journal of Operational Research",
+    "link": "The set team orienteering problem - ScienceDirect",
+    "notes": ""
+  },
+  {
+    "lab": "SLSCM Lab",
+    "type": "Hội thảo",
+    "title": "A 2-index Stage-based Formulation and a Construct, Merge, Solve & Adapt Algorithm for the Flying Sidekick Traveling Salesman Problem",
+    "venue": "CITA 2025",
+    "link": "https://link.springer.com/chapter/10.1007/978-3-032-00972-2_6",
+    "notes": ""
+  },
+  {
+    "lab": "SLSCM Lab",
+    "type": "Hội thảo",
+    "title": "A Hybrid Genetic Search for Energy-Aware Multi-Trip Drone Routing with Time-Windows",
+    "venue": "COMOSA 2025",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "lab": "SLSCM Lab",
+    "type": "Hội thảo",
+    "title": "Electric Vehicle Routing Problem with Time Windows and Station-based or Route-based Charging Options",
+    "venue": "COMOSA 2025",
+    "link": "",
+    "notes": ""
+  },
+  {
+    "lab": "SLSCM Lab",
+    "type": "Hội thảo",
+    "title": "Facility Location Under Nonlinear Customer Demand: A Fully Polynomial-Time Approximation Scheme",
+    "venue": "International Conference on Computational Data and Social Networks",
+    "link": "https://link.springer.com/chapter/10.1007/978-981-96-6389-7_3",
+    "notes": ""
+  },
+  {
+    "lab": "SLSCM Lab",
+    "type": "Hội thảo",
+    "title": "Constraint Programming-Based Cutting Plane Algorithm for a Combination of Orienteering and Maximum Capture Problem",
+    "venue": "International Symposium on Information and Communication Technology",
+    "link": "https://link.springer.com/chapter/10.1007/978-981-96-4282-3_29",
+    "notes": ""
+  },
+  {
+    "lab": "SLSCM Lab",
+    "type": "Hội thảo",
+    "title": "Machine Learning-Based Forecasting of LNG Spot Prices: A Case Study on the JKM Index",
+    "venue": "CSONET 2025",
+    "link": "https://doi.org/10.1007/978-981-92-4646-5_16",
+    "notes": ""
+  }
+]
