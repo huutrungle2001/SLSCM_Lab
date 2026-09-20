@@ -10,42 +10,43 @@ FROM: hub
 TO: oracle
 BASE_COMMIT: b5bfceb
 
-## 1. Objective & Scope
+## 1. Objective
 
-Refine and localize the **Researchers & Student Scholars (Members)** section and the **Lab Life** section in the SLSCM Lab portal (`SLSCM_Lab/web/` and `data/`):
+Refine, polish, and localize the **Researchers & Student Scholars (Members)** section and clean up the **Lab Life** section in the SLSCM Lab portal (`web/` and `data/`):
+- Switch all member names and descriptions in Researchers & Student Scholars to 100% English.
+- Correct names: `Lê Thanh Hồng` -> `Lê Thị Hồng` (Thi Hong Le), `Nguyễn Đức Công` -> `Nguyễn Đình Công` (Nguyen Dinh Cong).
+- Update member cards to display current educational affiliation and email (leave blank if missing).
+- Position **`Trung Le Huu`** immediately after `Le Ba Luat`, add `Awarded WMG Excellence Scholarship at the University of Warwick (UoW, 2026)`, add research interest `Bounded-optimal search`, and integrate profile info from `/Users/huutrungle2001/Documents/OnGoing/Trung-Le-Huu`.
+- Remove the `Explore facebook.com/slscm.lab` button at the bottom of the Lab Life section.
 
-### Core Requirements:
-1. **100% English Localization for Members**:
-   - All member names in the **Researchers & Student Scholars** section must be displayed in **English only** (no Vietnamese dual-name display needed).
-   - All roles, descriptions, status notes, and badges for members must be **100% English**.
-2. **Member Information Corrections**:
-   - Correct name: `Lê Thanh Hồng` -> `Lê Thị Hồng` (English: `Thi Hong Le`).
-   - Correct name: `Nguyễn Đức Công` -> `Nguyễn Đình Công` (English: `Nguyen Dinh Cong`).
-   - Member cards must display their **current educational affiliation** and **email**. If any member currently lacks either piece of information, leave that field blank.
-3. **Trung Le Huu Profile & Priority Positioning**:
-   - English display name: **`Trung Le Huu`**.
-   - Positioning: Place **`Trung Le Huu` immediately after `Le Ba Luat`** in the members roster.
-   - Status & Honors: Add `Awarded WMG Excellence Scholarship at the University of Warwick (UoW, 2026)`.
-   - Research Interests: Add `Bounded-optimal search`.
-   - Additional profile details: Extract relevant academic details from `/Users/huutrungle2001/Documents/OnGoing/Trung-Le-Huu` (e.g. email `huutrungle2001@gmail.com` or academic email, current institution University of Warwick, etc.).
-4. **Lab Life Section Cleanup**:
-   - Remove the `Explore facebook.com/slscm.lab` button at the bottom of the `#lab-life` section.
-5. **Quality & Verification**:
-   - Run `npm --prefix web run build` to verify zero TypeScript errors and successful production bundling.
-   - Verify visually via OmniBrowser CDP on port 17082.
-   - Commit all changes and deploy to Vercel production (`vercel --prod --yes`).
+## 2. Scope
 
----
-
-## 2. File Boundaries
-
+Files authorized for modification:
 - `web/src/data/slscm_people.json`
 - `web/src/App.tsx`
 - `.agents/communication/results/task-003-members-localization-and-profile-refinement.md`
 
----
+## 3. Acceptance Criteria
 
-## 3. Mandatory Subagent Delegation (Iron Invariant)
+1. **100% English Localization**:
+   - Researchers & Student Scholars cards display only English names (no Vietnamese name dual display).
+   - Card descriptions, honors, status, and track tags are 100% English.
+2. **Member Corrections & Metadata**:
+   - `Lê Thanh Hồng` is updated to `Thi Hong Le` (`Lê Thị Hồng`).
+   - `Nguyễn Đức Công` is updated to `Nguyen Dinh Cong` (`Nguyễn Đình Công`).
+   - Cards display educational affiliation and email. If missing, leave empty gracefully without broken UI.
+3. **Trung Le Huu Placement & Profile**:
+   - English display name is `Trung Le Huu`.
+   - Placed directly after `Le Ba Luat` in the young researchers list.
+   - Includes `Awarded WMG Excellence Scholarship at the University of Warwick (UoW, 2026)`.
+   - Includes research interest `Bounded-optimal search`.
+4. **Lab Life Button Removal**:
+   - The button `Explore facebook.com/slscm.lab` at the bottom of `#lab-life` is removed.
+5. **Subagent Delegation**:
+   - `slscm-oracle` and `slscm-hive` coordinate with worker subagents (`gemini-3.8-flash-high`) via `spawn_agent` to complete tasks rapidly.
 
-Per Workbench operational guidelines:
-`slscm-oracle` and `slscm-hive` must delegate tasks to worker subagents (`gemini-3.8-flash-high`) via `spawn_agent` / background workers to complete updates rapidly in parallel without blocking.
+## 4. Validation
+
+1. `npm --prefix web run build` succeeds with exit code 0.
+2. Verify visual appearance on browser via CDP port 17082.
+3. Commit result record and push to master, deploy to Vercel production.
