@@ -450,133 +450,172 @@ people = {
     ],
     "young_researchers_and_authors": [
         {
-            "id": "le-ba-luat",
-            "name": "Lê Bá Luật",
-            "name_en": "Ba Luat Le",
-            "role_vi": "Nghiên cứu viên trẻ / Tác giả chính",
-            "role_en": "Junior Researcher / Lead Author",
-            "current_status_vi": "Thủ khoa toàn trường Đại học Phenikaa (2025), Nhận học bổng Tiến sĩ toàn phần tại Singapore Management University (SMU, 2026)",
-            "current_status_en": "Valedictorian of Phenikaa University (2025), Full PhD Scholarship at Singapore Management University (SMU, 2026)",
-            "featured_publications": [
-                "INFORMS Journal on Computing (2026)",
-                "Computers & Operations Research (2026)",
-                "CSONET (2025)"
-            ],
-            "research_interests": [
-                "Competitive Facility Location",
-                "Conic Programming & Outer Approximation",
-                "Discrete Optimization"
-            ]
+                "id": "le-ba-luat",
+                "name": "Lê Bá Luật",
+                "name_en": "Ba Luat Le",
+                "avatar": "/assets/images/people/le_ba_luat.jpg",
+                "role_vi": "Nghiên cứu viên trẻ / Tác giả chính",
+                "role_en": "Junior Researcher / Lead Author",
+                "current_status_vi": "Thủ khoa toàn trường Đại học Phenikaa (2025), Nhận học bổng Tiến sĩ toàn phần tại Singapore Management University (SMU, 2026)",
+                "current_status_en": "Valedictorian of Phenikaa University (2025), Full PhD Scholarship at Singapore Management University (SMU, 2026)",
+                "affiliation": "Singapore Management University (SMU) & Phenikaa University",
+                "affiliation_en": "Singapore Management University (SMU) & Phenikaa University",
+                "email": "",
+                "featured_publications": [
+                        "INFORMS Journal on Computing (2026)",
+                        "Computers & Operations Research (2026)",
+                        "CSONET (2025)"
+                ],
+                "research_interests": [
+                        "Competitive Facility Location",
+                        "Conic Programming & Outer Approximation",
+                        "Discrete Optimization"
+                ]
         },
         {
-            "id": "tran-nam-khanh",
-            "name": "Trần Nam Khánh",
-            "name_en": "Nam-Khanh Tran",
-            "role_vi": "Nghiên cứu viên trẻ / Đồng tác giả chính",
-            "role_en": "Junior Researcher / Co-Author",
-            "current_status_vi": "Tác giả chính công bố trên Transportation Research Part C (2026) & CITA (2025)",
-            "current_status_en": "Co-author in Transportation Research Part C (2026) & CITA (2025)",
-            "featured_publications": [
-                "Transportation Research Part C: Emerging Technologies (2026)",
-                "CITA (2025)"
-            ],
-            "research_interests": [
-                "Revisit Flying Sidekick Traveling Salesman Problem (RV-FSTSP)",
-                "Drone Routing & Multi-Trip Delivery Logistics"
-            ]
+                "id": "trung-le-huu",
+                "name": "Lê Hữu Trung",
+                "name_en": "Trung Le Huu",
+                "avatar": "/assets/images/people/trung_le_huu.jpg",
+                "role_vi": "Nghiên cứu viên / Tác giả",
+                "role_en": "Researcher / Author",
+                "current_status_vi": "Nhận học bổng Xuất sắc WMG tại Đại học Warwick (UoW, 2026)",
+                "current_status_en": "Awarded WMG Excellence Scholarship at the University of Warwick (UoW, 2026)",
+                "affiliation": "WMG, University of Warwick (UoW, 2026)",
+                "affiliation_en": "WMG, University of Warwick (UoW, 2026)",
+                "email": "huutrungle2001@gmail.com",
+                "featured_publications": [
+                        "CITA (2025)"
+                ],
+                "research_interests": [
+                        "Bounded-optimal search",
+                        "Multi-Agent Systems",
+                        "Vehicle Routing & Optimization"
+                ]
         },
         {
-            "id": "tran-trung-duc",
-            "name": "Trần Trung Đức",
-            "name_en": "Trung Duc Tran",
-            "role_vi": "Nghiên cứu viên / Tác giả",
-            "role_en": "Researcher / Author",
-            "featured_publications": [
-                "COMOSA (2025/2026)"
-            ],
-            "research_interests": [
-                "Electric Vehicle Routing Problem with Time Windows (EVRP-TW)",
-                "Green Supply Chain & Smart Charging Stations"
-            ]
+                "id": "tran-nam-khanh",
+                "name": "Trần Nam Khánh",
+                "name_en": "Nam-Khanh Tran",
+                "role_vi": "Nghiên cứu viên trẻ / Đồng tác giả chính",
+                "role_en": "Junior Researcher / Co-Author",
+                "current_status_vi": "Đồng tác giả công bố trên Transportation Research Part C (2026) & CITA (2025)",
+                "current_status_en": "Co-author in Transportation Research Part C (2026) & CITA (2025)",
+                "affiliation": "Phenikaa University",
+                "affiliation_en": "Phenikaa University",
+                "email": "",
+                "featured_publications": [
+                        "Transportation Research Part C: Emerging Technologies (2026)",
+                        "CITA (2025)"
+                ],
+                "research_interests": [
+                        "Revisit Flying Sidekick Traveling Salesman Problem (RV-FSTSP)",
+                        "Drone Routing & Multi-Trip Delivery Logistics"
+                ]
         },
         {
-            "id": "le-thanh-hong",
-            "name": "Lê Thanh Hồng",
-            "name_en": "Le Thanh Hong",
-            "role_vi": "Nghiên cứu viên / Tác giả chính",
-            "role_en": "Researcher / Lead Author",
-            "featured_publications": [
-                "Transportation Research Part C: Emerging Technologies (2026)",
-                "CITA (2025)"
-            ],
-            "research_interests": [
-                "Stage-Based Mathematical Modeling",
-                "Construct-Merge-Solve & Adapt Metaheuristics",
-                "Drone-Assisted Routing"
-            ]
+                "id": "tran-trung-duc",
+                "name": "Trần Trung Đức",
+                "name_en": "Trung Duc Tran",
+                "role_vi": "Nghiên cứu viên / Tác giả",
+                "role_en": "Researcher / Author",
+                "current_status_vi": "Đồng tác giả công bố trên COMOSA (2025/2026)",
+                "current_status_en": "Co-author in COMOSA (2025/2026)",
+                "affiliation": "National Economics University (NEU)",
+                "affiliation_en": "National Economics University (NEU)",
+                "email": "",
+                "featured_publications": [
+                        "COMOSA (2025/2026)"
+                ],
+                "research_interests": [
+                        "Electric Vehicle Routing Problem with Time Windows (EVRP-TW)",
+                        "Green Supply Chain & Smart Charging Stations"
+                ]
         },
         {
-            "id": "nguyen-duc-cong",
-            "name": "Nguyễn Đức Công",
-            "name_en": "Nguyen Dinh Cong",
-            "role_vi": "Nghiên cứu viên / Tác giả",
-            "role_en": "Researcher / Author",
-            "featured_publications": [
-                "Transportation Research Part C: Emerging Technologies (2026)",
-                "CITA (2025)"
-            ],
-            "research_interests": [
-                "Combinatorial Optimization",
-                "UAV Routing and Scheduling"
-            ]
+                "id": "le-thi-hong",
+                "name": "Lê Thị Hồng",
+                "name_en": "Thi Hong Le",
+                "role_vi": "Nghiên cứu viên / Tác giả chính",
+                "role_en": "Researcher / Lead Author",
+                "current_status_vi": "Tác giả chính công bố trên Transportation Research Part C (2026) & CITA (2025)",
+                "current_status_en": "Lead author in Transportation Research Part C (2026) & CITA (2025)",
+                "affiliation": "Phenikaa University",
+                "affiliation_en": "Phenikaa University",
+                "email": "",
+                "featured_publications": [
+                        "Transportation Research Part C: Emerging Technologies (2026)",
+                        "CITA (2025)"
+                ],
+                "research_interests": [
+                        "Stage-Based Mathematical Modeling",
+                        "Construct-Merge-Solve & Adapt Metaheuristics",
+                        "Drone-Assisted Routing"
+                ]
         },
         {
-            "id": "le-huu-trung",
-            "name": "Lê Hữu Trung",
-            "name_en": "Le Huu Trung",
-            "role_vi": "Nghiên cứu viên / Tác giả",
-            "role_en": "Researcher / Author",
-            "featured_publications": [
-                "CITA (2025)"
-            ],
-            "research_interests": [
-                "Algorithmic Engineering",
-                "Metaheuristics for Routing Problems"
-            ]
+                "id": "nguyen-dinh-cong",
+                "name": "Nguyễn Đình Công",
+                "name_en": "Nguyen Dinh Cong",
+                "role_vi": "Nghiên cứu viên / Tác giả",
+                "role_en": "Researcher / Author",
+                "current_status_vi": "Đồng tác giả công bố trên Transportation Research Part C (2026) & CITA (2025)",
+                "current_status_en": "Co-author in Transportation Research Part C (2026) & CITA (2025)",
+                "affiliation": "Phenikaa University",
+                "affiliation_en": "Phenikaa University",
+                "email": "",
+                "featured_publications": [
+                        "Transportation Research Part C: Emerging Technologies (2026)",
+                        "CITA (2025)"
+                ],
+                "research_interests": [
+                        "Combinatorial Optimization",
+                        "UAV Routing and Scheduling"
+                ]
         },
         {
-            "id": "pham-tuan-anh",
-            "name": "Phạm Tuấn Anh",
-            "name_en": "Tuan Anh Pham",
-            "role_vi": "Nghiên cứu viên / Tác giả",
-            "role_en": "Researcher / Author",
-            "featured_publications": [
-                "European Journal of Operational Research (2025)",
-                "COMOSA (2025/2026)"
-            ],
-            "research_interests": [
-                "Inventory Routing Problems (IRP)",
-                "Hybrid Genetic Search",
-                "Energy-Aware Drone Logistics"
-            ]
+                "id": "pham-tuan-anh",
+                "name": "Phạm Tuấn Anh",
+                "name_en": "Tuan Anh Pham",
+                "role_vi": "Nghiên cứu viên / Tác giả",
+                "role_en": "Researcher / Author",
+                "current_status_vi": "Tác giả công bố trên European Journal of Operational Research (2025) & COMOSA (2025/2026)",
+                "current_status_en": "Author in European Journal of Operational Research (2025) & COMOSA (2025/2026)",
+                "affiliation": "National Economics University (NEU)",
+                "affiliation_en": "National Economics University (NEU)",
+                "email": "",
+                "featured_publications": [
+                        "European Journal of Operational Research (2025)",
+                        "COMOSA (2025/2026)"
+                ],
+                "research_interests": [
+                        "Inventory Routing Problems (IRP)",
+                        "Hybrid Genetic Search",
+                        "Energy-Aware Drone Logistics"
+                ]
         },
         {
-            "id": "pham-hoang-giang",
-            "name": "Phạm Hoàng Giang",
-            "name_en": "Hoang Giang Pham",
-            "role_vi": "Nghiên cứu viên / Tác giả",
-            "role_en": "Researcher / Author",
-            "featured_publications": [
-                "IJCAI (2026)",
-                "SOICT (2025)"
-            ],
-            "research_interests": [
-                "Stackelberg Security Games",
-                "Quantal Response Models",
-                "Constraint Programming Cutting-Plane Algorithms"
-            ]
+                "id": "pham-hoang-giang",
+                "name": "Phạm Hoàng Giang",
+                "name_en": "Hoang Giang Pham",
+                "role_vi": "Nghiên cứu viên / Tác giả",
+                "role_en": "Researcher / Author",
+                "current_status_vi": "Tác giả công bố trên IJCAI (2026) & SOICT (2025)",
+                "current_status_en": "Author in IJCAI (2026) & SOICT (2025)",
+                "affiliation": "National Economics University (NEU)",
+                "affiliation_en": "National Economics University (NEU)",
+                "email": "",
+                "featured_publications": [
+                        "IJCAI (2026)",
+                        "SOICT (2025)"
+                ],
+                "research_interests": [
+                        "Stackelberg Security Games",
+                        "Quantal Response Models",
+                        "Constraint Programming Cutting-Plane Algorithms"
+                ]
         }
-    ],
+],
     "hall_of_fame": [
         {
             "id": "hof-le-ba-luat",
@@ -620,56 +659,96 @@ people = {
     ],
     "student_researchers": [
         {
-            "name": "Hà Thu Hà",
-            "major": "Khoa học Dữ liệu & Trí tuệ Nhân tạo (KHDL&TTNT)",
-            "institution": "Trường Công nghệ, Đại học Kinh tế Quốc dân"
+                "name": "Hà Thu Hà",
+                "name_en": "Thu Ha Ha",
+                "major": "Khoa học Dữ liệu & Trí tuệ Nhân tạo (KHDL&TTNT)",
+                "major_en": "Data Science & Artificial Intelligence (DS&AI)",
+                "institution": "Trường Công nghệ, Đại học Kinh tế Quốc dân",
+                "institution_en": "College of Technology, National Economics University (NEU)",
+                "email": ""
         },
         {
-            "name": "Phùng Thị Thu Trang",
-            "major": "Khoa học Dữ liệu & Trí tuệ Nhân tạo (KHDL&TTNT)",
-            "institution": "Trường Công nghệ, Đại học Kinh tế Quốc dân"
+                "name": "Phùng Thị Thu Trang",
+                "name_en": "Thu Trang Phung",
+                "major": "Khoa học Dữ liệu & Trí tuệ Nhân tạo (KHDL&TTNT)",
+                "major_en": "Data Science & Artificial Intelligence (DS&AI)",
+                "institution": "Trường Công nghệ, Đại học Kinh tế Quốc dân",
+                "institution_en": "College of Technology, National Economics University (NEU)",
+                "email": ""
         },
         {
-            "name": "Tạ Thành Đạt",
-            "major": "Khoa học Dữ liệu & Trí tuệ Nhân tạo (KHDL&TTNT)",
-            "institution": "Trường Công nghệ, Đại học Kinh tế Quốc dân"
+                "name": "Tạ Thành Đạt",
+                "name_en": "Thanh Dat Ta",
+                "major": "Khoa học Dữ liệu & Trí tuệ Nhân tạo (KHDL&TTNT)",
+                "major_en": "Data Science & Artificial Intelligence (DS&AI)",
+                "institution": "Trường Công nghệ, Đại học Kinh tế Quốc dân",
+                "institution_en": "College of Technology, National Economics University (NEU)",
+                "email": ""
         },
         {
-            "name": "Đặng Nhật Minh",
-            "major": "Khoa học Dữ liệu & Trí tuệ Nhân tạo (KHDL&TTNT)",
-            "institution": "Trường Công nghệ, Đại học Kinh tế Quốc dân"
+                "name": "Đặng Nhật Minh",
+                "name_en": "Nhat Minh Dang",
+                "major": "Khoa học Dữ liệu & Trí tuệ Nhân tạo (KHDL&TTNT)",
+                "major_en": "Data Science & Artificial Intelligence (DS&AI)",
+                "institution": "Trường Công nghệ, Đại học Kinh tế Quốc dân",
+                "institution_en": "College of Technology, National Economics University (NEU)",
+                "email": ""
         },
         {
-            "name": "Mai Thành Lộc",
-            "major": "Toán Kinh tế",
-            "institution": "Đại học Kinh tế Quốc dân"
+                "name": "Mai Thành Lộc",
+                "name_en": "Thanh Loc Mai",
+                "major": "Toán Kinh tế",
+                "major_en": "Mathematical Economics",
+                "institution": "Đại học Kinh tế Quốc dân",
+                "institution_en": "National Economics University (NEU)",
+                "email": ""
         },
         {
-            "name": "Lã Quang Chiến",
-            "major": "Toán Kinh tế",
-            "institution": "Đại học Kinh tế Quốc dân"
+                "name": "Lã Quang Chiến",
+                "name_en": "Quang Chien La",
+                "major": "Toán Kinh tế",
+                "major_en": "Mathematical Economics",
+                "institution": "Đại học Kinh tế Quốc dân",
+                "institution_en": "National Economics University (NEU)",
+                "email": ""
         },
         {
-            "name": "Nguyệt Ánh",
-            "major": "Công nghệ Thông tin",
-            "institution": "Trường Công nghệ, Đại học Kinh tế Quốc dân"
+                "name": "Nguyệt Ánh",
+                "name_en": "Nguyet Anh",
+                "major": "Công nghệ Thông tin",
+                "major_en": "Information Technology",
+                "institution": "Trường Công nghệ, Đại học Kinh tế Quốc dân",
+                "institution_en": "College of Technology, National Economics University (NEU)",
+                "email": ""
         },
         {
-            "name": "Nguyễn Trần Quốc Đạt",
-            "major": "Toán Kinh tế",
-            "institution": "Đại học Kinh tế Quốc dân"
+                "name": "Nguyễn Trần Quốc Đạt",
+                "name_en": "Quoc Dat Nguyen Tran",
+                "major": "Toán Kinh tế",
+                "major_en": "Mathematical Economics",
+                "institution": "Đại học Kinh tế Quốc dân",
+                "institution_en": "National Economics University (NEU)",
+                "email": ""
         },
         {
-            "name": "Lê Quốc Trần Anh",
-            "major": "Toán Kinh tế",
-            "institution": "Đại học Kinh tế Quốc dân"
+                "name": "Lê Quốc Trần Anh",
+                "name_en": "Tran Anh Le Quoc",
+                "major": "Toán Kinh tế",
+                "major_en": "Mathematical Economics",
+                "institution": "Đại học Kinh tế Quốc dân",
+                "institution_en": "National Economics University (NEU)",
+                "email": ""
         },
         {
-            "name": "Hà Quang Minh",
-            "major": "Toán Kinh tế",
-            "institution": "Đại học Kinh tế Quốc dân"
+                "name": "Hà Quang Minh",
+                "name_en": "Quang Minh Ha",
+                "major": "Toán Kinh tế",
+                "major_en": "Mathematical Economics",
+                "institution": "Đại học Kinh tế Quốc dân",
+                "institution_en": "National Economics University (NEU)",
+                "email": ""
         }
-    ],
+],
     "global_academic_partners": [
         {
             "country": "Singapore",
