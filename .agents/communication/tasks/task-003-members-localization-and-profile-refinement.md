@@ -7,7 +7,7 @@ ATTEMPT: 1
 CREATED_AT: 2026-09-20T09:18:00Z
 UPDATED_AT: 2026-09-20T09:18:00Z
 FROM: hub
-TO: oracle
+TO: oracle, slscm-oracle
 BASE_COMMIT: b5bfceb
 
 ## 1. Objective
