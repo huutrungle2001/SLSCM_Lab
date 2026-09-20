@@ -182,8 +182,8 @@ def validate_record(record_path: Path, target_role: str = None, is_handoff: bool
     # 7. Target role routing check (if handed off)
     if target_role and to_role:
         to_roles = [r.strip() for r in to_role.split(",") if r.strip()]
-        clean_target = re.sub(r"^[a-zA-Z0-9_-]+_", "", target_role).replace("-", "_")
-        clean_to_roles = [re.sub(r"^[a-zA-Z0-9_-]+_", "", r).replace("-", "_") for r in to_roles]
+        clean_target = re.sub(r"^[a-zA-Z0-9]+[_-]", "", target_role).replace("-", "_")
+        clean_to_roles = [re.sub(r"^[a-zA-Z0-9]+[_-]", "", r).replace("-", "_") for r in to_roles]
         if target_role not in to_roles and clean_target not in clean_to_roles:
             errors.append(f"Handoff target '{target_role}' not listed in record TO field: '{to_role}'")
 
