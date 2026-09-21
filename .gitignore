@@ -1,1 +1,5 @@
 .vercel
+.tmp/
+*.log
+preview_*.png
+web/preview_*.png
