@@ -98,14 +98,15 @@ data/
 ### Architecture
 - **Primary Monorepo**: [`huutrungle2001/SLSCM_Lab`](https://github.com/huutrungle2001/SLSCM_Lab)
   - Contains research data, raw intelligence, automation scripts, agents communication logs, and the `web/` application.
-- **Dedicated Public Website Repo**: [`slscm-lab/website`](https://github.com/slscm-lab/website)
+- **Dedicated Public Website Repo**: [`slscm-lab/slscm-lab.github.io`](https://github.com/slscm-lab/slscm-lab.github.io)
   - Contains strictly the frontend web codebase (contents of `web/` mapped directly to repo root).
+  - Deploys automatically to **GitHub Pages** (`https://slscm-lab.github.io`) and **Vercel** (`https://slscm-lab.vercel.app`).
 
 ### Synchronization Workflow (Git Subtree + Signed Verified Commits)
-Never initialize a nested `.git` inside `web/` (avoids corrupting parent repo tracking with invalid gitlinks). To synchronize updates from `web/` to `slscm-lab/website`:
+Never initialize a nested `.git` inside `web/` (avoids corrupting parent repo tracking with invalid gitlinks). To synchronize updates from `web/` to `slscm-lab/slscm-lab.github.io`:
 
 1. **Remote Configuration**:
-   - Remote alias: `slscm-web` -> `https://github.com/slscm-lab/website.git`
+   - Remote alias: `slscm-web` -> `https://github.com/slscm-lab/slscm-lab.github.io.git`
 2. **Subtree Split, Sign & Push Protocol**:
    ```bash
    # 1. Split web directory into a clean standalone branch
@@ -115,7 +116,7 @@ Never initialize a nested `.git` inside `web/` (avoids corrupting parent repo tr
    git checkout -B web-signed web-deploy
    git rebase --exec 'git commit --amend --no-edit -S' --root
 
-   # 3. Push to slscm-lab/website main using huutrungle2001 credentials
+   # 3. Push to slscm-lab/slscm-lab.github.io main using huutrungle2001 credentials
    env -u HTTPS_PROXY -u HTTP_PROXY -u https_proxy -u http_proxy -u ALL_PROXY -u SSL_CERT_FILE \
      git push slscm-web web-signed:main --force
 
@@ -133,17 +134,19 @@ Never initialize a nested `.git` inside `web/` (avoids corrupting parent repo tr
      ```bash
      ./scripts/sync_to_production.sh
      ```
-   - This script automatically verifies the build, performs the subtree split, signs all commits with the SSH key, pushes to `slscm-lab/website:main`, and switches back to `master`.
+   - This script automatically verifies the build, performs the subtree split, signs all commits with the SSH key, pushes to `slscm-lab/slscm-lab.github.io:main`, and switches back to `master`.
 
 ---
 
-## 6. Dual-Deployment Environments (Vercel & Live Domains)
+## 6. Multi-Platform Deployment Architecture (GitHub Pages, Vercel & Staging)
 
-The project employs an industry-standard Staging/Dev vs. Production dual-deployment topology under the official Vercel team **`SLSCM-Lab`** (`slscm-lab`):
+The project employs an industry-standard dual-hosting production pipeline alongside a dedicated staging environment:
 
-| Environment | Repository & Branch | Purpose & Scope | Vercel Project | Live URL | Deployment Trigger |
+| Environment | Platform | Repository & Branch | Purpose & Scope | Live URL | Deployment Trigger |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Dev / Staging** | [`huutrungle2001/SLSCM_Lab`](https://github.com/huutrungle2001/SLSCM_Lab)<br>`master` | Research workspace, agent experiments, staging review | `slscm-dev` | [`https://slscm-dev.vercel.app`](https://slscm-dev.vercel.app) | Manual / CLI (`vercel --prod`) |
-| **Production** | [`slscm-lab/website`](https://github.com/slscm-lab/website)<br>`main` | Official public showcase, clean frontend, verified commits | `slscm-lab` | [`https://slscm-lab.vercel.app`](https://slscm-lab.vercel.app) | **Automatic** on push to `main` via GitHub Git Integration |
+| **Production (Academic)** | **GitHub Pages** | [`slscm-lab/slscm-lab.github.io`](https://github.com/slscm-lab/slscm-lab.github.io)<br>`main` | Official institutional showcase & academic portal | 🌐 [**https://slscm-lab.github.io**](https://slscm-lab.github.io) | **Automatic** on push via GitHub Actions (`deploy-pages.yml`) |
+| **Production (Edge)** | **Vercel** | [`slscm-lab/slscm-lab.github.io`](https://github.com/slscm-lab/slscm-lab.github.io)<br>`main` | High-performance CDN & edge delivery | 🚀 [**https://slscm-lab.vercel.app**](https://slscm-lab.vercel.app) | **Automatic** on push via Vercel Git Integration |
+| **Dev / Staging** | **Vercel** | [`huutrungle2001/SLSCM_Lab`](https://github.com/huutrungle2001/SLSCM_Lab)<br>`master` | Research monorepo, agent experiments, staging review | 🔗 [**https://slscm-dev.vercel.app**](https://slscm-dev.vercel.app) | **Automatic** on push via GitHub Actions (`deploy-staging.yml`) |
+
 
 

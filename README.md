@@ -1,6 +1,7 @@
 # SLSCM Lab — Smart Logistics & Supply Chain Management
 
-[![Live Production](https://img.shields.io/badge/Production-slscm--lab.vercel.app-0284c7?style=flat-square&logo=vercel)](https://slscm-lab.vercel.app)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-slscm--lab.github.io-181717?style=flat-square&logo=github)](https://slscm-lab.github.io)
+[![Vercel Production](https://img.shields.io/badge/Vercel-slscm--lab.vercel.app-0284c7?style=flat-square&logo=vercel)](https://slscm-lab.vercel.app)
 [![Staging Dev](https://img.shields.io/badge/Staging-slscm--dev.vercel.app-10b981?style=flat-square&logo=vercel)](https://slscm-dev.vercel.app)
 [![GitHub License](https://img.shields.io/badge/License-MIT-slate?style=flat-square)](LICENSE)
 
@@ -11,9 +12,9 @@
 
 ## 🌐 Deployments & Repositories
 
-| Environment | Repository | Purpose | Live URL |
+| Environment | Repository | Purpose | Live URLs |
 | :--- | :--- | :--- | :--- |
-| **Production** | [`slscm-lab/website`](https://github.com/slscm-lab/website) | Official public showcase & research portal | 🚀 [**https://slscm-lab.vercel.app**](https://slscm-lab.vercel.app) |
+| **Production** | [`slscm-lab/slscm-lab.github.io`](https://github.com/slscm-lab/slscm-lab.github.io) | Official public showcase & research portal | 🌐 [**https://slscm-lab.github.io**](https://slscm-lab.github.io)<br>🚀 [**https://slscm-lab.vercel.app**](https://slscm-lab.vercel.app) |
 | **Dev / Staging** | [`huutrungle2001/SLSCM_Lab`](https://github.com/huutrungle2001/SLSCM_Lab) | Research monorepo, data catalog & staging preview | 🔗 [**https://slscm-dev.vercel.app**](https://slscm-dev.vercel.app) |
 
 ---

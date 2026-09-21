@@ -40,10 +40,12 @@ echo "📦 Running frontend build verification..."
 npm --prefix web run build
 
 # 4. Check or configure slscm-web remote
-REMOTE_URL="https://github.com/slscm-lab/website.git"
+REMOTE_URL="https://github.com/slscm-lab/slscm-lab.github.io.git"
 if ! git remote get-url slscm-web >/dev/null 2>&1; then
   echo "🔗 Adding slscm-web remote: ${REMOTE_URL}"
   git remote add slscm-web "${REMOTE_URL}"
+else
+  git remote set-url slscm-web "${REMOTE_URL}"
 fi
 
 # 5. Split web/ into standalone branch
@@ -56,8 +58,8 @@ echo "🔏 Re-signing commits with ed25519 SSH signing key..."
 git checkout -B web-signed web-deploy
 git rebase --exec 'git commit --amend --no-edit -S' --root
 
-# 7. Push to slscm-lab/website main branch bypassing 9Router proxy
-echo "🚀 Pushing web-signed branch to slscm-lab/website:main..."
+# 7. Push to slscm-lab/slscm-lab.github.io main branch bypassing 9Router proxy
+echo "🚀 Pushing web-signed branch to slscm-lab/slscm-lab.github.io:main..."
 env -u HTTPS_PROXY -u HTTP_PROXY -u https_proxy -u http_proxy -u ALL_PROXY -u SSL_CERT_FILE \
   git push slscm-web web-signed:main --force
 
@@ -67,7 +69,8 @@ git checkout "${CURRENT_BRANCH}"
 
 echo "======================================================================"
 echo "✅ SUCCESS! Production repository is synchronized and verified:"
-echo "   Repo: https://github.com/slscm-lab/website"
-echo "   Live: https://slscm-lab.vercel.app"
+echo "   Repo:         https://github.com/slscm-lab/slscm-lab.github.io"
+echo "   GitHub Pages: https://slscm-lab.github.io"
+echo "   Vercel:       https://slscm-lab.vercel.app"
 echo "======================================================================"
 
