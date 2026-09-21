@@ -127,3 +127,22 @@ Never initialize a nested `.git` inside `web/` (avoids corrupting parent repo tr
    - **Author Name**: `Trung Le Huu` (`huutrungle2001@gmail.com`).
    - **GPG/SSH Signing**: `commit.gpgsign=true`, key `~/.ssh/id_ed25519_huutrungle.pub` — guarantees green **Verified** badge on GitHub.
    - **Network/Proxy Rule**: Always bypass 9Router proxy using `env -u HTTPS_PROXY -u HTTP_PROXY -u https_proxy -u http_proxy -u ALL_PROXY -u SSL_CERT_FILE` for any `gh` or `git` remote operations.
+
+4. **Automated One-Command Sync**:
+   - Instead of running manual subtree steps, execute:
+     ```bash
+     ./scripts/sync_to_production.sh
+     ```
+   - This script automatically verifies the build, performs the subtree split, signs all commits with the SSH key, pushes to `slscm-lab/website:main`, and switches back to `master`.
+
+---
+
+## 6. Dual-Deployment Environments (Vercel & Live Domains)
+
+The project employs an industry-standard Staging/Dev vs. Production dual-deployment topology under the official Vercel team **`SLSCM-Lab`** (`slscm-lab`):
+
+| Environment | Repository & Branch | Purpose & Scope | Vercel Project | Live URL | Deployment Trigger |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Dev / Staging** | [`huutrungle2001/SLSCM_Lab`](https://github.com/huutrungle2001/SLSCM_Lab)<br>`master` | Research workspace, agent experiments, staging review | `slscm-dev` | [`https://slscm-dev.vercel.app`](https://slscm-dev.vercel.app) | Manual / CLI (`vercel --prod`) |
+| **Production** | [`slscm-lab/website`](https://github.com/slscm-lab/website)<br>`main` | Official public showcase, clean frontend, verified commits | `slscm-website` | [`https://slscm-website.vercel.app`](https://slscm-website.vercel.app)<br>[`https://slscm-portal.vercel.app`](https://slscm-portal.vercel.app) | **Automatic** on push to `main` via GitHub Git Integration |
+
