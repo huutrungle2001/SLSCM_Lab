@@ -90,3 +90,40 @@ data/
 2. **OmniBrowser Protocol**:
    - Interacting with Facebook (`https://www.facebook.com/slscm.lab`) must strictly use OmniBrowser's standard pipeline (`list-tabs ⟶ observe ⟶ act ⟶ observe`).
    - All browser automation connects to Chrome CDP on port `17082`.
+
+---
+
+## 5. Repository Topology & Web Subtree Synchronization
+
+### Architecture
+- **Primary Monorepo**: [`huutrungle2001/SLSCM_Lab`](https://github.com/huutrungle2001/SLSCM_Lab)
+  - Contains research data, raw intelligence, automation scripts, agents communication logs, and the `web/` application.
+- **Dedicated Public Website Repo**: [`slscm-lab/website`](https://github.com/slscm-lab/website)
+  - Contains strictly the frontend web codebase (contents of `web/` mapped directly to repo root).
+
+### Synchronization Workflow (Git Subtree + Signed Verified Commits)
+Never initialize a nested `.git` inside `web/` (avoids corrupting parent repo tracking with invalid gitlinks). To synchronize updates from `web/` to `slscm-lab/website`:
+
+1. **Remote Configuration**:
+   - Remote alias: `slscm-web` -> `https://github.com/slscm-lab/website.git`
+2. **Subtree Split, Sign & Push Protocol**:
+   ```bash
+   # 1. Split web directory into a clean standalone branch
+   git subtree split --prefix=web -b web-deploy
+
+   # 2. Re-sign all commits with SSH key to preserve the GitHub "Verified" badge
+   git checkout -B web-signed web-deploy
+   git rebase --exec 'git commit --amend --no-edit -S' --root
+
+   # 3. Push to slscm-lab/website main using huutrungle2001 credentials
+   env -u HTTPS_PROXY -u HTTP_PROXY -u https_proxy -u http_proxy -u ALL_PROXY -u SSL_CERT_FILE \
+     git push slscm-web web-signed:main --force
+
+   # 4. Return to master
+   git checkout master
+   ```
+3. **Commit Identity & Signing Invariants**:
+   - **Account**: `huutrungle2001` (Admin on both repositories).
+   - **Author Name**: `Trung Le Huu` (`huutrungle2001@gmail.com`).
+   - **GPG/SSH Signing**: `commit.gpgsign=true`, key `~/.ssh/id_ed25519_huutrungle.pub` — guarantees green **Verified** badge on GitHub.
+   - **Network/Proxy Rule**: Always bypass 9Router proxy using `env -u HTTPS_PROXY -u HTTP_PROXY -u https_proxy -u http_proxy -u ALL_PROXY -u SSL_CERT_FILE` for any `gh` or `git` remote operations.
