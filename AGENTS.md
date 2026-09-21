@@ -144,5 +144,6 @@ The project employs an industry-standard Staging/Dev vs. Production dual-deploym
 | Environment | Repository & Branch | Purpose & Scope | Vercel Project | Live URL | Deployment Trigger |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Dev / Staging** | [`huutrungle2001/SLSCM_Lab`](https://github.com/huutrungle2001/SLSCM_Lab)<br>`master` | Research workspace, agent experiments, staging review | `slscm-dev` | [`https://slscm-dev.vercel.app`](https://slscm-dev.vercel.app) | Manual / CLI (`vercel --prod`) |
-| **Production** | [`slscm-lab/website`](https://github.com/slscm-lab/website)<br>`main` | Official public showcase, clean frontend, verified commits | `slscm-website` | [`https://slscm-website.vercel.app`](https://slscm-website.vercel.app)<br>[`https://slscm-portal.vercel.app`](https://slscm-portal.vercel.app) | **Automatic** on push to `main` via GitHub Git Integration |
+| **Production** | [`slscm-lab/website`](https://github.com/slscm-lab/website)<br>`main` | Official public showcase, clean frontend, verified commits | `slscm-lab` | [`https://slscm-lab.vercel.app`](https://slscm-lab.vercel.app) | **Automatic** on push to `main` via GitHub Git Integration |
+
 

@@ -68,6 +68,6 @@ git checkout "${CURRENT_BRANCH}"
 echo "======================================================================"
 echo "✅ SUCCESS! Production repository is synchronized and verified:"
 echo "   Repo: https://github.com/slscm-lab/website"
-echo "   Live: https://slscm-website.vercel.app"
-echo "   Live: https://slscm-portal.vercel.app"
+echo "   Live: https://slscm-lab.vercel.app"
 echo "======================================================================"
+
