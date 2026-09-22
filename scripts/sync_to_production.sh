@@ -53,19 +53,34 @@ echo "🌿 Splitting web/ subtree into web-deploy branch..."
 git branch -D web-deploy 2>/dev/null || true
 git subtree split --prefix=web -b web-deploy
 
-# 6. Re-sign all commits with SSH key for GitHub "Verified" badge
-echo "🔏 Re-signing commits with ed25519 SSH signing key..."
-git checkout -B web-signed web-deploy
+# 6. Re-sign all commits in an isolated temporary worktree
+# This guarantees the main monorepo working tree is NEVER touched,
+# so Vite and PostCSS dev servers never experience branch-switch crashes.
+echo "🔏 Re-signing commits in isolated temporary worktree..."
+TMP_WORKTREE="$(mktemp -d /tmp/slscm-sync-XXXXXX)"
+cleanup() {
+  if [[ -d "${TMP_WORKTREE}" ]]; then
+    git worktree remove --force "${TMP_WORKTREE}" 2>/dev/null || true
+    rm -rf "${TMP_WORKTREE}" 2>/dev/null || true
+  fi
+}
+trap cleanup EXIT
+
+git branch -D web-signed 2>/dev/null || true
+git branch web-signed web-deploy
+git worktree add "${TMP_WORKTREE}" web-signed
+
+pushd "${TMP_WORKTREE}" >/dev/null
 git rebase --exec 'git commit --amend --no-edit -S' --root
 
 # 7. Push to slscm-lab/slscm-lab.github.io main branch bypassing 9Router proxy
 echo "🚀 Pushing web-signed branch to slscm-lab/slscm-lab.github.io:main..."
 env -u HTTPS_PROXY -u HTTP_PROXY -u https_proxy -u http_proxy -u ALL_PROXY -u SSL_CERT_FILE \
   git push slscm-web web-signed:main --force
+popd >/dev/null
 
-# 8. Return to original branch
-echo "🔙 Returning to ${CURRENT_BRANCH}..."
-git checkout "${CURRENT_BRANCH}"
+cleanup
+trap - EXIT
 
 echo "======================================================================"
 echo "✅ SUCCESS! Production repository is synchronized and verified:"
