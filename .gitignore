@@ -4,3 +4,7 @@
 preview_*.png
 web/preview_*.png
 open_local.html
+node_modules/
+dist/
+*.tsbuildinfo
+
