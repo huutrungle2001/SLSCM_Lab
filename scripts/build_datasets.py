@@ -668,15 +668,6 @@ people = {
                 "email": ""
         },
         {
-                "name": "Phùng Thị Thu Trang",
-                "name_en": "Thu Trang Phung",
-                "major": "Khoa học Dữ liệu & Trí tuệ Nhân tạo (KHDL&TTNT)",
-                "major_en": "Data Science & Artificial Intelligence (DS&AI)",
-                "institution": "Trường Công nghệ, Đại học Kinh tế Quốc dân",
-                "institution_en": "College of Technology, National Economics University (NEU)",
-                "email": ""
-        },
-        {
                 "name": "Tạ Thành Đạt",
                 "name_en": "Thanh Dat Ta",
                 "major": "Khoa học Dữ liệu & Trí tuệ Nhân tạo (KHDL&TTNT)",
@@ -692,24 +683,6 @@ people = {
                 "major_en": "Data Science & Artificial Intelligence (DS&AI)",
                 "institution": "Trường Công nghệ, Đại học Kinh tế Quốc dân",
                 "institution_en": "College of Technology, National Economics University (NEU)",
-                "email": ""
-        },
-        {
-                "name": "Mai Thành Lộc",
-                "name_en": "Thanh Loc Mai",
-                "major": "Toán Kinh tế",
-                "major_en": "Mathematical Economics",
-                "institution": "Đại học Kinh tế Quốc dân",
-                "institution_en": "National Economics University (NEU)",
-                "email": ""
-        },
-        {
-                "name": "Lã Quang Chiến",
-                "name_en": "Quang Chien La",
-                "major": "Toán Kinh tế",
-                "major_en": "Mathematical Economics",
-                "institution": "Đại học Kinh tế Quốc dân",
-                "institution_en": "National Economics University (NEU)",
                 "email": ""
         },
         {
@@ -731,24 +704,42 @@ people = {
                 "email": ""
         },
         {
-                "name": "Lê Quốc Trần Anh",
-                "name_en": "Tran Anh Le Quoc",
-                "major": "Toán Kinh tế",
-                "major_en": "Mathematical Economics",
-                "institution": "Đại học Kinh tế Quốc dân",
-                "institution_en": "National Economics University (NEU)",
+                "name": "Phùng Thị Thu Trang",
+                "name_en": "Thu Trang Phung",
+                "major": "Khoa học Dữ liệu & Trí tuệ Nhân tạo (KHDL&TTNT)",
+                "major_en": "Data Science & Artificial Intelligence (DS&AI)",
+                "institution": "Khoa KHDL&TTNT (FDA), Trường Công nghệ, Đại học Kinh tế Quốc dân",
+                "institution_en": "Faculty of Data Science & AI (FDA), College of Technology, NEU",
                 "email": ""
         },
         {
-                "name": "Hà Quang Minh",
-                "name_en": "Quang Minh Ha",
-                "major": "Toán Kinh tế",
-                "major_en": "Mathematical Economics",
-                "institution": "Đại học Kinh tế Quốc dân",
-                "institution_en": "National Economics University (NEU)",
+                "name": "Hoa Phong",
+                "name_en": "Phong Hoa",
+                "major": "Khoa học Dữ liệu & Trí tuệ Nhân tạo",
+                "major_en": "Data Science & Artificial Intelligence",
+                "institution": "Trường Công nghệ, Đại học Kinh tế Quốc dân",
+                "institution_en": "College of Technology, National Economics University (NEU)",
+                "email": ""
+        },
+        {
+                "name": "Trần Tuấn Anh",
+                "name_en": "Tuan Anh Tran",
+                "major": "Công nghệ Thông tin & Khoa học Máy tính",
+                "major_en": "Information Technology & Computer Science",
+                "institution": "Trường Đại học Công nghệ, ĐHQGHN (VNU-UET)",
+                "institution_en": "VNU University of Engineering and Technology (VNU-UET)",
+                "email": ""
+        },
+        {
+                "name": "Phạm Gia Nguyên",
+                "name_en": "Gia Nguyen Pham",
+                "major": "Toán học & Khoa học Máy tính",
+                "major_en": "Mathematics & Computer Science",
+                "institution": "Trường Đại học Khoa học Tự nhiên, ĐHQGHN (VNU-HUS)",
+                "institution_en": "VNU University of Science (VNU-HUS)",
                 "email": ""
         }
-],
+    ],
     "global_academic_partners": [
         {
             "country": "Singapore",
