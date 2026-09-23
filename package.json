@@ -1,0 +1,13 @@
+{
+  "name": "slscm-lab-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "data:import": "python3 database/scripts/import_existing_json.py",
+    "data:validate": "python3 database/scripts/validate_data.py",
+    "data:generate": "python3 database/scripts/export_data.py",
+    "dev": "npm --prefix web run dev",
+    "build": "npm run data:validate && npm run data:generate && npm --prefix web run build",
+    "sync": "./scripts/sync_to_production.sh"
+  }
+}

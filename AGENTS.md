@@ -148,5 +148,38 @@ The project employs an industry-standard dual-hosting production pipeline alongs
 | **Production (Edge)** | **Vercel** | [`slscm-lab/slscm-lab.github.io`](https://github.com/slscm-lab/slscm-lab.github.io)<br>`main` | High-performance CDN & edge delivery | 🚀 [**https://slscm-lab.vercel.app**](https://slscm-lab.vercel.app) | **Automatic** on push via Vercel Git Integration |
 | **Dev / Staging** | **Vercel** | [`huutrungle2001/SLSCM_Lab`](https://github.com/huutrungle2001/SLSCM_Lab)<br>`master` | Research monorepo, agent experiments, staging review | 🔗 [**https://slscm-dev.vercel.app**](https://slscm-dev.vercel.app) | **Automatic** on push via GitHub Actions (`deploy-staging.yml`) |
 
+---
+
+## 7. Authentic Academic Abstract Retrieval Protocol (DOI & Publisher Pipeline)
+
+Whenever publications are cataloged, updated, or verified in `data/processed/` or `web/src/data/`, agents must adhere to the **Academic Abstract Harvesting Protocol** to ensure 100% authentic, author-written abstracts (no fabricated summaries or truncated placeholders):
+
+### 1. The Multi-Tier Retrieval Hierarchy
+When given a publication DOI (e.g., `10.1287/ijoc.2025.1150`, `10.1111/itor.70177`, `10.1016/j.trc.2026.105906`, `10.1007/978-3-032-00972-2_6`):
+1. **Tier 1 — Crossref API (`api.crossref.org`)**:
+   - Query: `https://api.crossref.org/works/{doi}` with polite header `User-Agent: SLSCMBot/1.0 (mailto:minhvd@neu.edu.vn)`.
+   - Inspect `message.abstract`. If present, strip JATS/XML tags (`<jats:p>`, `&lt;jats:p&gt;`, etc.) to retain clean plain text.
+2. **Tier 2 — OpenAlex API (`api.openalex.org`)**:
+   - Query: `https://api.openalex.org/works/doi:{doi}`.
+   - Reconstruct abstract from `abstract_inverted_index` by sorting `(position, word)` pairs:
+     ```python
+     word_positions = [(pos, word) for word, positions in inv_index.items() for pos in positions]
+     abstract = " ".join(word for _, word in sorted(word_positions))
+     ```
+3. **Tier 3 — Publisher Landing Page Scraping / Web Fetch**:
+   - **Springer / SpringerLink (`link.springer.com`)**: Resolve DOI to chapter/article page. Fetch HTML and extract text inside `<div class="c-article-section__content" id="Abs1-content">` or `<meta name="dc.description">`.
+   - **INFORMS PubsOnline (`pubsonline.informs.org`)**: Inspect Crossref abstract or extract `<div class="abstractSection abstractInFull">`.
+   - **Wiley Online Library (`onlinelibrary.wiley.com`)**: Crossref and OpenAlex provide full author abstracts directly.
+   - **Elsevier / ScienceDirect (`sciencedirect.com`)**: Resolve PII from DOI redirection (`https://linkinghub.elsevier.com/retrieve/pii/{PII}`). Fetch via browser automation (OmniBrowser / CDP port `17082`), ResearchGate, publisher repository READMEs (e.g. author GitHub repos), or open preprint servers (arXiv / SSRN).
+4. **Tier 4 — Content Negotiation with DOI**:
+   - Use `curl -sLH "Accept: application/x-bibtex" https://doi.org/{doi}` to verify official venue, volume, issue, year, and exact author list.
+   - Use `curl -sLH "Accept: application/vnd.citationstyles.csl+json" https://doi.org/{doi}` for structured CSL metadata.
+
+### 2. Sanitization & Storage Directives
+- **XML Tag Stripping**: Never leave raw HTML/XML tags (such as `<jats:title>`, `<jats:p>`, `&lt;jats:p&gt;`, `&amp;`) in JSON fields.
+- **English Purity**: Preserve exact author phrasing; keep abstracts purely in English.
+- **Dual Persistence**: Update both `data/processed/<file>.json` and `web/src/data/<file>.json` simultaneously to keep monorepo and frontend synchronized.
+
+
 
 

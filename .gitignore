@@ -8,3 +8,13 @@ node_modules/
 dist/
 *.tsbuildinfo
 
+# SQLite temporary & journal files
+*.sqlite-shm
+*.sqlite-wal
+*.db-journal
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+
