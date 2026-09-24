@@ -37,10 +37,12 @@ def get_institution_id(inst_name):
     name_lower = inst_name.lower()
     if "national economics university" in name_lower or "kinh tế quốc dân" in name_lower or "neu" in name_lower:
         return "neu"
+    if "engineering and technology" in name_lower or "vnu-uet" in name_lower:
+        return "vnu-uet"
+    if "hanoi university of science and technology" in name_lower or "bách khoa" in name_lower or "hust" in name_lower:
+        return "hust"
     if "university of science" in name_lower or "khoa học tự nhiên" in name_lower or "vnu-hus" in name_lower:
         return "vnu-hus"
-    if "bách khoa" in name_lower or "hust" in name_lower:
-        return "hust"
     if "singapore management" in name_lower or "smu" in name_lower:
         return "smu"
     if "connecticut" in name_lower or "uconn" in name_lower:
@@ -88,6 +90,7 @@ def main():
     institutions = [
         ("neu", "National Economics University", "NEU", "Vietnam", "Hanoi", "https://neu.edu.vn"),
         ("vnu-hus", "VNU University of Science", "VNU-HUS", "Vietnam", "Hanoi", "https://hus.vnu.edu.vn"),
+        ("vnu-uet", "VNU University of Engineering and Technology", "VNU-UET", "Vietnam", "Hanoi", "https://uet.vnu.edu.vn"),
         ("hust", "Hanoi University of Science and Technology", "HUST", "Vietnam", "Hanoi", "https://hust.edu.vn"),
         ("smu", "Singapore Management University", "SMU", "Singapore", "Singapore", "https://smu.edu.sg"),
         ("uconn", "University of Connecticut", "UConn", "United States", "Storrs", "https://uconn.edu"),
