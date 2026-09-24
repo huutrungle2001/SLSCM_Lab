@@ -6,6 +6,7 @@ Outputs to web/src/data/generated/ for static deployment and repository consumpt
 
 import json
 import os
+import re
 import sqlite3
 import sys
 
@@ -195,14 +196,56 @@ def main():
         })
 
     # Global Academic Partners
+    UNIVERSITY_LOOKUP = [
+        ("smu", "Singapore Management University (SMU)", "SMU", "/assets/images/universities/smu.svg", "https://smu.edu.sg"),
+        ("udine", "University of Udine", "UniUd", "/assets/images/universities/udine.png", "https://uniud.it"),
+        ("austria", "University of Graz & Austrian Partners", "UniGraz", "/assets/images/universities/graz.svg", "https://uni-graz.at"),
+        ("graz", "University of Graz & Austrian Partners", "UniGraz", "/assets/images/universities/graz.svg", "https://uni-graz.at"),
+        ("cardiff", "Cardiff University", "Cardiff", "/assets/images/universities/cardiff.svg", "https://www.cardiff.ac.uk"),
+        ("lancaster", "Lancaster University", "Lancaster", "/assets/images/universities/lancaster.svg", "https://www.lancaster.ac.uk"),
+        ("ljmu", "Liverpool John Moores University (LJMU)", "LJMU", "/assets/images/universities/ljmu.svg", "https://www.ljmu.ac.uk"),
+        ("liverpool", "Liverpool John Moores University (LJMU)", "LJMU", "/assets/images/universities/ljmu.svg", "https://www.ljmu.ac.uk"),
+        ("uconn", "University of Connecticut (UConn)", "UConn", "/assets/images/universities/uconn.svg", "https://uconn.edu"),
+        ("connecticut", "University of Connecticut (UConn)", "UConn", "/assets/images/universities/uconn.svg", "https://uconn.edu"),
+        ("loyola", "Loyola University Chicago", "LUC", "/assets/images/universities/loyola_chicago.svg", "https://www.luc.edu"),
+        ("michigan", "University of Michigan - Flint", "UM-Flint", "/assets/images/universities/um_flint.svg", "https://www.umflint.edu"),
+        ("montréal", "Université de Montréal", "UdeM", "/assets/images/universities/udem.svg", "https://www.umontreal.ca"),
+        ("montreal", "Université de Montréal", "UdeM", "/assets/images/universities/udem.svg", "https://www.umontreal.ca"),
+        ("cirrelt", "CIRRELT (Centre interuniversitaire)", "CIRRELT", "/assets/images/universities/cirrelt.png", "https://www.cirrelt.ca"),
+        ("hust", "Hanoi University of Science and Technology (HUST)", "HUST", "/assets/images/universities/hust.svg", "https://hust.edu.vn"),
+        ("hus", "VNU University of Science (VNU-HUS)", "VNU-HUS", "/assets/images/universities/vnu_hus.svg", "https://hus.vnu.edu.vn"),
+        ("vnu", "VNU University of Science (VNU-HUS)", "VNU-HUS", "/assets/images/universities/vnu_hus.svg", "https://hus.vnu.edu.vn"),
+        ("phenikaa", "Phenikaa University", "Phenikaa", "/assets/images/universities/phenikaa.png", "https://phenikaa-uni.edu.vn"),
+        ("vinuni", "VinUniversity", "VinUni", "/assets/images/universities/vinuni.png", "https://vinuni.edu.vn"),
+        ("vinuniversity", "VinUniversity", "VinUni", "/assets/images/universities/vinuni.png", "https://vinuni.edu.vn"),
+    ]
+
     cursor.execute("SELECT * FROM global_academic_partners ORDER BY order_index ASC")
     partner_rows = cursor.fetchall()
     partner_list = []
     for p in partner_rows:
         collabs = [c.strip() for c in p["key_collaborators"].split(",") if c.strip()]
+        insts = []
+        seen = set()
+        raw_tokens = [t.strip() for t in re.split(r'[,/]', p["institution"]) if t.strip()]
+        for t in raw_tokens:
+            if "partner institutes" in t.lower():
+                continue
+            for kw, name, short_name, logo, web in UNIVERSITY_LOOKUP:
+                if kw in t.lower() and logo not in seen:
+                    seen.add(logo)
+                    insts.append({
+                        "name": name,
+                        "short_name": short_name,
+                        "logo": logo,
+                        "website": web
+                    })
+                    break
+
         partner_list.append({
             "country": p["country"],
             "institution": p["institution"],
+            "institutions": insts,
             "collaborators": p["key_collaborators"],
             "key_collaborators": collabs,
             "scope": p["research_focus"],
