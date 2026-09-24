@@ -457,10 +457,10 @@
           "website": "https://smu.edu.sg"
         }
       ],
-      "key_collaborators": [
-        "GS. Mai Tiến (School of Computing and Information Systems)"
-      ],
-      "research_focus": "Discrete Choice Models, Competitive Facility Location, Conic Optimization"
+      "key_collaborators": [],
+      "research_focus": "",
+      "scope": "",
+      "collaborators": ""
     },
     {
       "country": "Italy",
@@ -473,10 +473,10 @@
           "website": "https://uniud.it"
         }
       ],
-      "key_collaborators": [
-        "GS. Andrea Schaerf (Department of Polytechnic of Engineering and Architecture)"
-      ],
-      "research_focus": "Parallel Machine Scheduling, Constraint Programming, Metaheuristics"
+      "key_collaborators": [],
+      "research_focus": "",
+      "scope": "",
+      "collaborators": ""
     },
     {
       "country": "Austria",
@@ -489,10 +489,10 @@
           "website": "https://uni-graz.at"
         }
       ],
-      "key_collaborators": [
-        "TS. Roberto Maria Rosati"
-      ],
-      "research_focus": "Combinatorial Optimization, Metaheuristic Neighborhood Search"
+      "key_collaborators": [],
+      "research_focus": "",
+      "scope": "",
+      "collaborators": ""
     },
     {
       "country": "United Kingdom",
@@ -545,12 +545,10 @@
           "website": "https://www.umflint.edu"
         }
       ],
-      "key_collaborators": [
-        "Collaborators in Actuarial Science",
-        "Optimization",
-        "and Industrial Engineering"
-      ],
-      "research_focus": "Quantitative Risk, Behavioral Economics, Smart Energy Systems"
+      "key_collaborators": [],
+      "research_focus": "",
+      "scope": "",
+      "collaborators": ""
     },
     {
       "country": "Canada & France",
@@ -569,11 +567,10 @@
           "website": "https://www.cirrelt.ca"
         }
       ],
-      "key_collaborators": [
-        "GS. André Langevin",
-        "GS. Thibaut Vidal"
-      ],
-      "research_focus": "Capacitated Arc Routing (CARP), Inventory Routing (IRP), Hybrid Genetic Search"
+      "key_collaborators": [],
+      "research_focus": "",
+      "scope": "",
+      "collaborators": ""
     },
     {
       "country": "Vietnam",
@@ -604,12 +601,10 @@
           "website": "https://vinuni.edu.vn"
         }
       ],
-      "key_collaborators": [
-        "PGS. TS. Hà Minh Hoàng (VNU-HUS)",
-        "TS. Tạ Thúy Anh (Phenikaa University)",
-        "TS. Đức Đồng Đỗ (HUST)"
-      ],
-      "research_focus": "National Science Foundation Collaborations, Graph Algorithms, High-Performance Computing"
+      "key_collaborators": [],
+      "research_focus": "",
+      "scope": "",
+      "collaborators": ""
     }
   ]
 }
