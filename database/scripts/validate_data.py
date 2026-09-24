@@ -5,6 +5,8 @@ Verifies integrity, foreign keys, uniqueness, required fields, and asset paths.
 """
 
 import os
+import json
+import re
 import sqlite3
 import sys
 
@@ -58,6 +60,36 @@ def main():
     if bad_pubs:
         for p in bad_pubs:
             errors.append(f"Publication '{p[0]}' missing required fields (title, year, venue, type)")
+
+    # Publication keywords must use the shared topic/method vocabulary.
+    vocabulary_path = os.path.join(ROOT_DIR, "data", "processed", "research_keywords.json")
+    with open(vocabulary_path, encoding="utf-8") as vocabulary_file:
+        vocabulary = json.load(vocabulary_file)
+    valid_keywords = {item["id"] for item in vocabulary}
+    topic_keywords = {item["id"] for item in vocabulary if item["kind"] == "topic"}
+    cursor.execute("SELECT id, keywords FROM publications")
+    for publication_id, raw_keywords in cursor.fetchall():
+        try:
+            keywords = json.loads(raw_keywords or "[]")
+        except json.JSONDecodeError:
+            errors.append(f"Publication '{publication_id}' has invalid keyword JSON")
+            continue
+        if not isinstance(keywords, list) or not keywords or not all(isinstance(item, str) for item in keywords):
+            errors.append(f"Publication '{publication_id}' needs a keyword list")
+            continue
+        if len(keywords) != len(set(keywords)) or not set(keywords) <= valid_keywords:
+            errors.append(f"Publication '{publication_id}' has duplicate or unknown keywords")
+        if not set(keywords) & topic_keywords:
+            errors.append(f"Publication '{publication_id}' needs at least one topic keyword")
+
+    cursor.execute("SELECT id, abstract, abstract_source FROM publications WHERE year < 2024")
+    for publication_id, abstract, abstract_source in cursor.fetchall():
+        if abstract and not abstract_source:
+            errors.append(f"Earlier publication '{publication_id}' lacks an abstract source")
+        if abstract and re.search(r"<[^>]+>|&(?:lt|gt|amp);", abstract):
+            errors.append(f"Earlier publication '{publication_id}' contains abstract markup")
+        if not abstract:
+            warnings.append(f"Earlier publication '{publication_id}' has no verified abstract")
 
     # People: name, category
     cursor.execute("SELECT id FROM people WHERE name IS NULL OR name = '' OR category IS NULL OR category = ''")

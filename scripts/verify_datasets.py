@@ -8,6 +8,7 @@ Exits with 0 on complete success, or non-zero on failure.
 import json
 import os
 import sys
+from datetime import date
 
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 PROCESSED_DIR = os.path.join(BASE_DIR, 'data', 'processed')
@@ -60,7 +61,7 @@ def verify_publications():
 
         # Venue & Year
         assert isinstance(paper['venue'], str) and len(paper['venue'].strip()) > 0, f"Empty venue in {pid}"
-        assert paper['year'] in (2025, 2026), f"Year out of bounds (2025/2026 expected) in {pid}: {paper['year']}"
+        assert isinstance(paper['year'], int) and 1900 <= paper['year'] <= date.today().year + 1, f"Invalid year in {pid}: {paper['year']}"
         years_count[paper['year']] = years_count.get(paper['year'], 0) + 1
 
         # Type & Pillar
@@ -71,7 +72,7 @@ def verify_publications():
         pillar_counts[paper['research_pillar']] = pillar_counts.get(paper['research_pillar'], 0) + 1
 
         # Content & Abstract
-        assert isinstance(paper['abstract'], str) and len(paper['abstract'].strip()) > 0, f"Empty abstract in {pid}"
+        assert paper['abstract'] is None or (isinstance(paper['abstract'], str) and len(paper['abstract'].strip()) > 0), f"Invalid abstract in {pid}"
         assert isinstance(paper['bibtex'], str) and len(paper['bibtex'].strip()) > 0, f"Empty bibtex in {pid}"
         assert isinstance(paper['is_featured'], bool), f"is_featured must be boolean in {pid}"
         if paper['is_featured']:
@@ -173,7 +174,8 @@ def verify_overview(pub_count, hof_count, student_count, proj_count, partner_cou
     assert 'metrics' in data, "Overview must have a 'metrics' object"
 
     metrics = data['metrics']
-    assert metrics['total_publications_2025_2026'] == pub_count, "Publication count mismatch with overview"
+    recent_publications = sum(1 for paper in load_json('slscm_publications.json') if paper['year'] in (2025, 2026))
+    assert metrics['total_publications_2025_2026'] == recent_publications, "2025–2026 publication count mismatch with overview"
     assert metrics['phd_scholarships'] <= hof_count, "PhD scholarship count mismatch"
     assert metrics['student_researchers'] == student_count, "Student count mismatch"
     assert metrics['active_projects'] <= proj_count, "Project count mismatch"
@@ -183,7 +185,7 @@ def verify_overview(pub_count, hof_count, student_count, proj_count, partner_cou
     assert 'official_kpi_2025' in data
 
     print("✓ Cross-file consistency verified:")
-    print(f"  * Total publications: {metrics['total_publications_2025_2026']}")
+    print(f"  * Total publications: {pub_count} ({recent_publications} from 2025–2026)")
     print(f"  * Q1 journals: {metrics['q1_journals']}")
     print(f"  * PhD scholarships: {metrics['phd_scholarships']}")
     print(f"  * Valedictorian honors: {metrics['valedictorians']}")

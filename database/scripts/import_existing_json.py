@@ -295,7 +295,7 @@ def main():
         pubs_data = load_json("slscm_publications_2025_2026.json")
     for pub in pubs_data:
         legacy_pillar = pub.get("research_pillar", "")
-        # Map primary pillar id based on legacy taxonomy
+        # Map primary pillar id based on legacy taxonomy unless explicitly curated.
         if legacy_pillar == "ml_optimization":
             primary_pillar = "ai_supply_chain_intelligence"
         elif legacy_pillar == "green_transportation":
@@ -304,10 +304,11 @@ def main():
             primary_pillar = "supply_chain_optimization"
         else:
             primary_pillar = "decision_analytics"
+        primary_pillar = pub.get("primary_pillar_id") or primary_pillar
 
         cursor.execute(
-            """INSERT INTO publications (id, title, year, venue, type, doi, link, abstract, bibtex, research_pillar, primary_pillar_id, is_featured, badge)
-               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+            """INSERT INTO publications (id, title, year, venue, type, doi, link, abstract, abstract_source, bibtex, research_pillar, primary_pillar_id, keywords, is_featured, badge)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
             (
                 pub["id"],
                 pub["title"],
@@ -317,9 +318,11 @@ def main():
                 pub.get("doi", ""),
                 pub.get("link", ""),
                 pub.get("abstract", ""),
+                pub.get("abstract_source", ""),
                 pub.get("bibtex", ""),
                 legacy_pillar,
                 primary_pillar,
+                json.dumps(pub.get("keywords", []), ensure_ascii=False),
                 1 if pub.get("is_featured", False) else 0,
                 pub.get("badge", "")
             )

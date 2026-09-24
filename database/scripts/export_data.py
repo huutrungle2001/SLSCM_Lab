@@ -80,7 +80,9 @@ def main():
             "link": p["link"] or None,
             "research_pillar": p["research_pillar"],
             "primary_pillar_id": p["primary_pillar_id"],
+            "keywords": json.loads(p["keywords"]) if p["keywords"] else [],
             "abstract": p["abstract"] or None,
+            "abstract_source": p["abstract_source"] or None,
             "bibtex": p["bibtex"] or None,
             "is_featured": bool(p["is_featured"]),
             "highlighted_authors": highlighted,
@@ -421,6 +423,9 @@ def main():
     cursor.execute("SELECT COUNT(*) FROM publications")
     total_pubs = cursor.fetchone()[0]
 
+    cursor.execute("SELECT COUNT(*) FROM publications WHERE type = 'Journal'")
+    journal_articles = cursor.fetchone()[0]
+
     cursor.execute("SELECT COUNT(*) FROM publications WHERE venue LIKE '%Computing%' OR venue LIKE '%Transportation Research Part C%' OR venue LIKE '%European Journal%' OR venue LIKE '%Computers & Operations%' OR venue LIKE '%International Transactions%' OR venue LIKE '%Energy Research%'")
     q1_pubs = cursor.fetchone()[0]
 
@@ -441,6 +446,7 @@ def main():
 
     metrics = {
         "total_publications": total_pubs,
+        "journal_articles": journal_articles,
         "q1_journals": q1_pubs,
         "active_projects": active_projects,
         "phd_msc_scholarships": scholarships,

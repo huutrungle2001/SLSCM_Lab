@@ -80,9 +80,11 @@ CREATE TABLE IF NOT EXISTS publications (
     doi TEXT,
     link TEXT,
     abstract TEXT,
+    abstract_source TEXT, -- DOI/publisher URL for a verified author-written abstract
     bibtex TEXT,
     research_pillar TEXT, -- legacy taxonomy: operational_optimization, ml_optimization, green_transportation
     primary_pillar_id TEXT REFERENCES research_pillars(id),
+    keywords TEXT, -- JSON array of controlled research keyword IDs
     is_featured BOOLEAN DEFAULT 0,
     badge TEXT,
     status TEXT DEFAULT 'published',
