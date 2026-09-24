@@ -167,7 +167,7 @@ def main():
                 tech_id,
                 tech_lead["name"],
                 tech_lead.get("name_en", tech_lead["name"]),
-                tech_lead.get("role", "Web / Tech Lead & Senior Researcher"),
+                tech_lead.get("role", ""),
                 tech_lead.get("role_badge", "WEB & TECH LEAD / RESEARCHER"),
                 tech_lead.get("affiliation", ""),
                 inst_id,
