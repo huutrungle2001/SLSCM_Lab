@@ -7,6 +7,10 @@ open_local.html
 node_modules/
 dist/
 *.tsbuildinfo
+.env
+.env.local
+*.env
+web/.env
 
 # SQLite temporary & journal files
 *.sqlite-shm
