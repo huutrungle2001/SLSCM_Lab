@@ -289,7 +289,10 @@ def main():
 
     # 7. Import Publications
     print("📚 Importing publications...")
-    pubs_data = load_json("slscm_publications_2025_2026.json")
+    try:
+        pubs_data = load_json("slscm_publications.json")
+    except FileNotFoundError:
+        pubs_data = load_json("slscm_publications_2025_2026.json")
     for pub in pubs_data:
         legacy_pillar = pub.get("research_pillar", "")
         # Map primary pillar id based on legacy taxonomy

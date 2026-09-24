@@ -1089,7 +1089,7 @@ overview = {
 }
 
 # Write files
-pub_path = os.path.join(PROCESSED_DIR, 'slscm_publications_2025_2026.json')
+pub_path = os.path.join(PROCESSED_DIR, 'slscm_publications.json')
 with open(pub_path, 'w', encoding='utf-8') as f:
     json.dump(publications, f, ensure_ascii=False, indent=2)
 print(f"Wrote {len(publications)} publications to {pub_path}")

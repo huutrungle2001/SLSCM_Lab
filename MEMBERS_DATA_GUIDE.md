@@ -11,7 +11,7 @@ This document lists the exact data files, structures, and steps to **add, remove
 | 🎯 **Primary Data Source (Direct UI)** | [`web/src/data/slscm_people.json`](file:///home/orlab/Minh_ALL/td_bnc/website/web/src/data/slscm_people.json) | **Instant**. Vite hot-reloads changes in real-time. Adding/removing items here directly changes the website. |
 | 🪞 **Monorepo Backup Mirror** | [`data/processed/slscm_people.json`](file:///home/orlab/Minh_ALL/td_bnc/website/data/processed/slscm_people.json) | Used for repository data scripts and archive preservation. Always kept in sync with the primary file. |
 | 🖼️ **Member Photos & Avatars** | [`web/public/assets/images/people/`](file:///home/orlab/Minh_ALL/td_bnc/website/web/public/assets/images/people/) | Directory where square avatar image files (`.jpg` / `.png`) are placed. |
-| 📚 *Related: Publications* | [`web/src/data/slscm_publications_2025_2026.json`](file:///home/orlab/Minh_ALL/td_bnc/website/web/src/data/slscm_publications_2025_2026.json) | Only needed if adding a new member's scientific papers to the Research Vault. |
+| 📚 *Related: Publications* | [`web/src/data/slscm_publications.json`](file:///home/orlab/Minh_ALL/td_bnc/website/web/src/data/slscm_publications.json) | Only needed if adding a new member's scientific papers to the Research Vault. |
 | 🔬 *Related: Projects & Grants* | [`web/src/data/slscm_projects.json`](file:///home/orlab/Minh_ALL/td_bnc/website/web/src/data/slscm_projects.json) | Only needed if listing a member as a lead/collaborator on funded research grants. |
 
 ---

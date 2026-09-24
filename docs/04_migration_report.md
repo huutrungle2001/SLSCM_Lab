@@ -9,7 +9,7 @@
 
 ## 1. Executive Summary
 
-All legacy JSON datasets (`slscm_overview.json`, `slscm_people.json`, `slscm_projects.json`, `slscm_publications_2025_2026.json`, `slscm_seminars.json`, `slscm_events.json`, `slscm_facebook_posts.json`) have been successfully normalized, validated, and migrated into a unified SQLite database (`database/slscm.sqlite`).
+All legacy JSON datasets (`slscm_overview.json`, `slscm_people.json`, `slscm_projects.json`, `slscm_publications.json`, `slscm_seminars.json`, `slscm_events.json`, `slscm_facebook_posts.json`) have been successfully normalized, validated, and migrated into a unified SQLite database (`database/slscm.sqlite`).
 
 The frontend build pipeline was verified with `npm run build` passing with zero TypeScript or bundler errors.
 
@@ -54,7 +54,7 @@ The automated validation gatekeeper (`database/scripts/validate_data.py`) verifi
 ## 4. Taxonomy Conflict Resolution & Coexistence
 
 ### The Problem:
-- **Legacy publication taxonomy**: Publications in `slscm_publications_2025_2026.json` were categorized under:
+- **Legacy publication taxonomy**: Publications in `slscm_publications.json` were categorized under:
   - `operational_optimization` (8 papers)
   - `ml_optimization` (4 papers)
   - `green_transportation` (6 papers)

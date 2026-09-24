@@ -12,8 +12,8 @@ import subprocess
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "../.."))
 SQLITE_PATH = os.path.join(PROJECT_ROOT, "database", "slscm.sqlite")
-PROCESSED_JSON_PATH = os.path.join(PROJECT_ROOT, "data", "processed", "slscm_publications_2025_2026.json")
-WEB_DATA_JSON_PATH = os.path.join(PROJECT_ROOT, "web", "src", "data", "slscm_publications_2025_2026.json")
+PROCESSED_JSON_PATH = os.path.join(PROJECT_ROOT, "data", "processed", "slscm_publications.json")
+WEB_DATA_JSON_PATH = os.path.join(PROJECT_ROOT, "web", "src", "data", "slscm_publications.json")
 
 AUTHENTIC_ABSTRACTS = {
     "le-2026-cfl-ijoc": (

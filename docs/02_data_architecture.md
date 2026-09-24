@@ -38,7 +38,7 @@ The current React/TypeScript project stores content directly in multiple JSON fi
 slscm_overview.json
 slscm_people.json
 slscm_projects.json
-slscm_publications_2025_2026.json
+slscm_publications.json
 slscm_seminars.json
 slscm_events.json
 ```
@@ -686,7 +686,7 @@ const papers = getFeaturedPublications(4);
 instead of:
 
 ```ts
-import publicationsData from '../data/slscm_publications_2025_2026.json';
+import publicationsData from '../data/slscm_publications.json';
 ```
 
 This abstraction is important because the storage implementation may later change from:

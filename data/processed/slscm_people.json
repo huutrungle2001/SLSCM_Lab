@@ -8,7 +8,7 @@
       "title_en": "Head of Lab / Lecturer",
       "affiliation_vi": "Khoa Khoa học Dữ liệu & Trí tuệ Nhân tạo (FDA), Trường Công nghệ, Đại học Kinh tế Quốc dân (NEU)",
       "affiliation_en": "Faculty of Data Science and AI (FDA), College of Technology, National Economics University (NEU)",
-      "email": "",
+      "email": "minhvd@neu.edu.vn",
       "office": "P1613, Tòa nhà A1, Đại học Kinh tế Quốc dân – 207 Giải Phóng, Hà Nội",
       "research_interests": [
         "Transportation & Logistics Optimization",
@@ -206,9 +206,9 @@
       "advisors": "Faculty of Mathematical Economics & SLSCM Lab, NEU"
     },
     {
-      "id": "hof-tran-tat-dat",
-      "name": "Trần Tất Đạt",
-      "name_en": "Tat Dat Tran",
+      "id": "hof-nguyen-tat-dat",
+      "name": "Nguyễn Tất Đạt",
+      "name_en": "Nguyen Tat Dat",
       "avatar": "/assets/images/people/nguyen_tat_dat.jpg",
       "achievement_vi": "Tác giả chính công bố trên European Journal of Operational Research (EJOR, Q1); Giành học bổng nghiên cứu sinh Tiến sĩ (PhD) toàn phần tại Trường Đại học Liverpool John Moores (LJMU, Vương quốc Anh, 2025).",
       "achievement_en": "Lead author in European Journal of Operational Research (EJOR, Q1); Awarded Full PhD Scholarship at Liverpool John Moores University (LJMU, UK, 2025).",
@@ -296,7 +296,7 @@
     },
     {
       "name": "Phùng Thị Thu Trang",
-      "name_en": "Thu Trang Phung",
+      "name_en": "Phung Thi Thu Trang",
       "major": "Khoa học Dữ liệu & Trí tuệ Nhân tạo (KHDL&TTNT)",
       "major_en": "Data Science & Artificial Intelligence (DS&AI)",
       "institution": "Khoa KHDL&TTNT (FDA), Trường Công nghệ, Đại học Kinh tế Quốc dân",
@@ -397,9 +397,9 @@
       "linkedin": ""
     },
     {
-      "id": "alumni-tran-tat-dat",
-      "name": "Trần Tất Đạt",
-      "name_en": "Tat Dat Tran",
+      "id": "alumni-nguyen-tat-dat",
+      "name": "Nguyễn Tất Đạt",
+      "name_en": "Nguyen Tat Dat",
       "avatar": "/assets/images/people/nguyen_tat_dat.jpg",
       "period": "2025",
       "former_role_vi": "Cựu Nghiên cứu viên / Tác giả chính (EJOR Q1)",

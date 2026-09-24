@@ -76,7 +76,7 @@ data/
 │   └── facebook_posts/                       # Scraped posts, images, and milestones
 ├── processed/
 │   ├── neu_slscm_content.txt                 # Clean text extract from NEU page
-│   ├── slscm_publications_2025_2026.json     # Structured publications catalog
+│   ├── slscm_publications.json               # Structured publications catalog
 │   ├── slscm_people.json                     # Roster of faculty, researchers, alumni
 │   └── slscm_facebook_feed.json              # Curated timeline of lab activities
 ```

@@ -13,7 +13,7 @@ Hệ thống sử dụng cơ chế Monorepo với 2 vị trí file:
 | Danh mục | File nguồn trực tiếp (UI) | File lưu trữ sao lưu | Mục đích & Vị trí hiển thị trên Web |
 | :--- | :--- | :--- | :--- |
 | 👥 **Thành viên & Cựu SV** | [`web/src/data/slscm_people.json`](file:///home/orlab/Minh_ALL/td_bnc/website/web/src/data/slscm_people.json) | [`data/processed/slscm_people.json`](file:///home/orlab/Minh_ALL/td_bnc/website/data/processed/slscm_people.json) | Lãnh đạo lab, Giảng viên, Nghiên cứu viên trẻ, Sinh viên, Hall of Fame, Alumni, Đối tác quốc tế. |
-| 📚 **Công bố khoa học** | [`web/src/data/slscm_publications_2025_2026.json`](file:///home/orlab/Minh_ALL/td_bnc/website/web/src/data/slscm_publications_2025_2026.json) | [`data/processed/slscm_publications_2025_2026.json`](file:///home/orlab/Minh_ALL/td_bnc/website/data/processed/slscm_publications_2025_2026.json) | Kho công bố khoa học (Research Vault 19+ records), bộ lọc Journal/Conference, tìm kiếm DOI và xuất trích dẫn BibTeX. |
+| 📚 **Công bố khoa học** | [`web/src/data/slscm_publications.json`](file:///home/orlab/Minh_ALL/td_bnc/website/web/src/data/slscm_publications.json) | [`data/processed/slscm_publications.json`](file:///home/orlab/Minh_ALL/td_bnc/website/data/processed/slscm_publications.json) | Kho công bố khoa học (Research Vault 19+ records), bộ lọc Journal/Conference, tìm kiếm DOI và xuất trích dẫn BibTeX. |
 | 📰 **Sự kiện & Tin tức** | [`web/src/data/slscm_facebook_posts.json`](file:///home/orlab/Minh_ALL/td_bnc/website/web/src/data/slscm_facebook_posts.json) | [`data/processed/slscm_facebook_posts.json`](file:///home/orlab/Minh_ALL/td_bnc/website/data/processed/slscm_facebook_posts.json) | Mục **Lab Life / News Digest**: Tin tức bài báo mới, workshop, tuyển sinh nghiên cứu, sự kiện học thuật từ kênh Facebook. |
 | 🔬 **Dự án & Đề tài** | [`web/src/data/slscm_projects.json`](file:///home/orlab/Minh_ALL/td_bnc/website/web/src/data/slscm_projects.json) | [`data/processed/slscm_projects.json`](file:///home/orlab/Minh_ALL/td_bnc/website/data/processed/slscm_projects.json) | Mục **Impact & Projects**: Các đề tài NCKH cấp cơ sở, dự án liên lab (CADA & SLSCM Smart Water), hợp tác doanh nghiệp. |
 | 📊 **Tổng quan & Số liệu** | [`web/src/data/slscm_overview.json`](file:///home/orlab/Minh_ALL/td_bnc/website/web/src/data/slscm_overview.json) | [`data/processed/slscm_overview.json`](file:///home/orlab/Minh_ALL/td_bnc/website/data/processed/slscm_overview.json) | Các bộ đếm ở trang chủ (Số bài Q1, Số học bổng PhD, Trụ cột nghiên cứu, thông tin liên hệ). |
@@ -149,7 +149,7 @@ File này bao gồm các mảng thành viên:
 
 ---
 
-### B. Quản lý Công bố khoa học (`slscm_publications_2025_2026.json`)
+### B. Quản lý Công bố khoa học (`slscm_publications.json`)
 
 Mỗi bài báo khoa học là một object JSON trong mảng lớn. Cấu trúc mẫu chuẩn:
 
