@@ -180,6 +180,16 @@ When given a publication DOI (e.g., `10.1287/ijoc.2025.1150`, `10.1111/itor.7017
 - **English Purity**: Preserve exact author phrasing; keep abstracts purely in English.
 - **Dual Persistence**: Update both `data/processed/<file>.json` and `web/src/data/<file>.json` simultaneously to keep monorepo and frontend synchronized.
 
+---
 
+## 8. Workspace Maintenance Skills (`.agents/skills/`)
 
+Standardized skills and runbooks are available under `.agents/skills/` to streamline website maintenance:
 
+| Skill | Directory | Primary Purpose | Automated Helper Script |
+| :--- | :--- | :--- | :--- |
+| **`slscm-update-publication`** | [`.agents/skills/slscm-update-publication/`](file:///.agents/skills/slscm-update-publication/SKILL.md) | Harvest authentic DOI metadata, generate Supabase migrations, link faculty/scholar authors, update SQLite and JSON build artifacts. | `python3 .agents/skills/slscm-update-publication/scripts/add_publication.py --doi <DOI>` |
+| **`slscm-update-brief`** | [`.agents/skills/slscm-update-brief/`](file:///.agents/skills/slscm-update-brief/SKILL.md) | Publish bilingual news briefs, paper highlights, workshop announcements, and social feed digests to Homepage & Events page. | `python3 .agents/skills/slscm-update-brief/scripts/add_brief.py --id <ID> ...` |
+| **`slscm-update-topic`** | [`.agents/skills/slscm-update-topic/`](file:///.agents/skills/slscm-update-topic/SKILL.md) | Manage research pillars (`supply_chain_optimization`, `ai_supply_chain_intelligence`, `decision_analytics`), topic keywords, and introductions. | `python3 .agents/skills/slscm-update-topic/scripts/update_topics.py --pillar <PILLAR> ...` |
+| **`slscm-update-member`** | [`.agents/skills/slscm-update-member/`](file:///.agents/skills/slscm-update-member/SKILL.md) | Add, update, or retire faculty, student researchers, alumni placements worldwide (SMU, LJMU, UConn, Warwick), and Hall of Fame honors. | Follows [MEMBERS_DATA_GUIDE.md](file:///home/orlab/Minh_ALL/td_bnc/website/MEMBERS_DATA_GUIDE.md) & Supabase migrations |
+| **`slscm-deploy-production`** | [`.agents/skills/slscm-deploy-production/`](file:///.agents/skills/slscm-deploy-production/SKILL.md) | Verify build, split subtree, re-sign commits with SSH key, and push to GitHub Pages and Vercel. | `./scripts/sync_to_production.sh` |

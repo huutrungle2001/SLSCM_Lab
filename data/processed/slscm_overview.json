@@ -13,8 +13,8 @@
     "office": "P1613, Tòa nhà A1, NEU"
   },
   "metrics": {
-    "total_publications_2025_2026": 21,
-    "journal_articles": 10,
+    "total_publications_2025_2026": 22,
+    "journal_articles": 11,
     "q1_journals": 10,
     "conference_papers": 10,
     "book_chapters": 1,
@@ -23,7 +23,8 @@
     "valedictorians": 2,
     "active_projects": 4,
     "student_researchers": 9,
-    "international_partner_countries": 7
+    "international_partner_countries": 7,
+    "total_publications": 19
   },
   "team_structure": {
     "total_faculty_researchers": 7,
