@@ -24,7 +24,7 @@ SLSCM Lab research is organized into 3 overarching pillars:
 
 ## Quick Automated Topic Addition
 
-A pre-built taxonomy manager is provided at [scripts/update_topics.py](file:///home/orlab/Minh_ALL/td_bnc/website/.agents/skills/slscm-update-topic/scripts/update_topics.py):
+A pre-built taxonomy manager is provided at [scripts/update_topics.py](file:///home/orlab/Minh_ALL/website/.agents/skills/slscm-update-topic/scripts/update_topics.py):
 
 ### 1. Inspect Current Taxonomy
 ```bash
@@ -51,9 +51,9 @@ Flags:
 ## Files Synchronized
 1. **Remote Database**: `public.research_pillars` in Supabase via migration & `supabase db push --linked`.
 2. **Local SQLite**: `database/slscm.sqlite` (`research_pillars` table).
-3. **Keyword Taxonomy**: [`web/src/data/research_keywords.json`](file:///home/orlab/Minh_ALL/td_bnc/website/web/src/data/research_keywords.json).
-4. **Interactive Component**: [`web/src/pages/ResearchTopicsPage.tsx`](file:///home/orlab/Minh_ALL/td_bnc/website/web/src/pages/ResearchTopicsPage.tsx) (`areas` and `topicIntroductions`).
-5. **Static Artifacts**: [`web/src/data/generated/research_pillars.json`](file:///home/orlab/Minh_ALL/td_bnc/website/web/src/data/generated/research_pillars.json) generated via `database/scripts/export_data.py`.
+3. **Keyword Taxonomy**: [`web/src/data/research_keywords.json`](file:///home/orlab/Minh_ALL/website/web/src/data/research_keywords.json).
+4. **Interactive Component**: [`web/src/pages/ResearchTopicsPage.tsx`](file:///home/orlab/Minh_ALL/website/web/src/pages/ResearchTopicsPage.tsx) (`areas` and `topicIntroductions`).
+5. **Static Artifacts**: [`web/src/data/generated/research_pillars.json`](file:///home/orlab/Minh_ALL/website/web/src/data/generated/research_pillars.json) generated via `database/scripts/export_data.py`.
 
 ---
 

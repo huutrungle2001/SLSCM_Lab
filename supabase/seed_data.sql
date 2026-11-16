@@ -612,7 +612,17 @@ VALUES
   year = {2026},
   doi = {10.1007/s12597-026-01275-y},
   url = {https://doi.org/10.1007/s12597-026-01275-y}
-}', 'operational_optimization', 'supply_chain_optimization', false, NULL, 'published', '2026-10-16 11:25:56', '["minimum-spanning-tree", "branch-and-bound", "inner-node-costs", "exact-algorithms", "network-design"]'::jsonb, 'https://link.springer.com/article/10.1007/s12597-026-01275-y')
+}', 'operational_optimization', 'supply_chain_optimization', false, NULL, 'published', '2026-10-16 11:25:56', '["minimum-spanning-tree", "branch-and-bound", "inner-node-costs", "exact-algorithms", "network-design"]'::jsonb, 'https://link.springer.com/article/10.1007/s12597-026-01275-y'),
+  ('hoa-2026-pdstsp-lockers-trc', 'The parallel drone scheduling traveling salesman problem with lockers', 2026, 'Transportation Research Part C: Emerging Technologies', 'Journal', '10.1016/j.trc.2026.106103', 'https://doi.org/10.1016/j.trc.2026.106103', 'In this paper, we study the Parallel Drone Scheduling Traveling Salesman Problem with Lockers (PDSTSP-L), a novel last-mile delivery framework integrating parcel lockers into coordinated truck-and-drone operations. Rather than restricting drone sorties to direct customer deliveries, the model incorporates smart automated parcel lockers as alternative delivery locations and drone battery-swapping stations, overcoming payload and battery endurance limitations while addressing recipient unavailability. We formulate the problem as a Mixed-Integer Linear Programming (MILP) model to minimize total operational costs, encompassing truck travel costs, drone operating costs, and customer compensation discounts for locker pick-up. To solve practical, large-scale instances with up to 200 customers, we develop an efficient Iterated Local Search (ILS) metaheuristic tailored with problem-specific destruction and local search operators. Computational experiments on benchmark instances confirm that the MILP model finds optimal solutions for small instances, while the proposed ILS metaheuristic achieves superior solution quality and computational efficiency on large networks. Sensitivity analyses demonstrate that integrating smart lockers substantially enhances delivery performance and reduces overall logistical costs.', '@article{hoa_2026_pdstsp_lockers_trc,
+  title = {The parallel drone scheduling traveling salesman problem with lockers},
+  author = {Thu Trang Hoa and Minh Anh Nguyen and Minh Hoàng Hà and Duc Minh Vu},
+  journal = {Transportation Research Part C: Emerging Technologies},
+  volume = {194},
+  pages = {106103},
+  year = {2026},
+  doi = {10.1016/j.trc.2026.106103},
+  url = {https://doi.org/10.1016/j.trc.2026.106103}
+}', 'green_transportation', 'supply_chain_optimization', true, 'TRC (SCIE Q1)', 'published', '2026-11-02 23:18:00', '["drone-logistics", "parcel-lockers", "vehicle-routing", "pdstsp", "mixed-integer-programming", "iterated-local-search", "last-mile-delivery"]'::jsonb, 'https://doi.org/10.1016/j.trc.2026.106103')
 ON CONFLICT DO NOTHING;
 
 -- ------------------------------------------------------------------------------
@@ -868,7 +878,11 @@ VALUES
   ('bui-2026-mstic-opsearch', NULL, 'Minh Phan', 1, false),
   ('bui-2026-mstic-opsearch', 'nguyen-thanh-hoang', 'Hoang Nguyen Thanh', 2, true),
   ('bui-2026-mstic-opsearch', NULL, 'Dung Pham Quang', 3, false),
-  ('bui-2026-mstic-opsearch', NULL, 'Son Nguyen Van', 4, false)
+  ('bui-2026-mstic-opsearch', NULL, 'Son Nguyen Van', 4, false),
+  ('hoa-2026-pdstsp-lockers-trc', 'alumni-hoa-thi-thu-trang', 'Thu Trang Hoa', 0, true),
+  ('hoa-2026-pdstsp-lockers-trc', NULL, 'Minh Anh Nguyen', 1, true),
+  ('hoa-2026-pdstsp-lockers-trc', 'ha-minh-hoang', 'Minh Hoàng Hà', 2, true),
+  ('hoa-2026-pdstsp-lockers-trc', 'vu-duc-minh', 'Duc Minh Vu', 3, true)
 ON CONFLICT DO NOTHING;
 
 -- ------------------------------------------------------------------------------

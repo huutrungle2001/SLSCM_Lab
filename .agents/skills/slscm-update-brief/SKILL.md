@@ -19,7 +19,7 @@ This skill defines the operational workflow for authoring, publishing, and synch
 
 ## Quick Automated Execution
 
-Use the pre-built script [scripts/add_brief.py](file:///home/orlab/Minh_ALL/td_bnc/website/.agents/skills/slscm-update-brief/scripts/add_brief.py):
+Use the pre-built script [scripts/add_brief.py](file:///home/orlab/Minh_ALL/website/.agents/skills/slscm-update-brief/scripts/add_brief.py):
 
 ```bash
 python3 .agents/skills/slscm-update-brief/scripts/add_brief.py \

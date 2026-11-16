@@ -7,17 +7,17 @@ Hướng dẫn toàn diện về danh mục các file dữ liệu, cấu trúc J
 ## 1. Bản đồ tổng thể các File dữ liệu (Data Inventory)
 
 Hệ thống sử dụng cơ chế Monorepo với 2 vị trí file:
-- 🎯 **File nguồn trực tiếp (Frontend UI)**: Nằm trong [`web/src/data/`](file:///home/orlab/Minh_ALL/td_bnc/website/web/src/data/). Khi sửa file này, website ở Localhost sẽ **lập tức cập nhật thời gian thực (Hot-reload)**.
-- 🪞 **File lưu trữ đồng bộ (Data Archive)**: Nằm trong [`data/processed/`](file:///home/orlab/Minh_ALL/td_bnc/website/data/processed/). Được lưu trữ để chạy các script xử lý tự động và sao lưu. Hai thư mục này luôn được đồng bộ song song.
+- 🎯 **File nguồn trực tiếp (Frontend UI)**: Nằm trong [`web/src/data/`](file:///home/orlab/Minh_ALL/website/web/src/data/). Khi sửa file này, website ở Localhost sẽ **lập tức cập nhật thời gian thực (Hot-reload)**.
+- 🪞 **File lưu trữ đồng bộ (Data Archive)**: Nằm trong [`data/processed/`](file:///home/orlab/Minh_ALL/website/data/processed/). Được lưu trữ để chạy các script xử lý tự động và sao lưu. Hai thư mục này luôn được đồng bộ song song.
 
 | Danh mục | File nguồn trực tiếp (UI) | File lưu trữ sao lưu | Mục đích & Vị trí hiển thị trên Web |
 | :--- | :--- | :--- | :--- |
-| 👥 **Thành viên & Cựu SV** | [`web/src/data/slscm_people.json`](file:///home/orlab/Minh_ALL/td_bnc/website/web/src/data/slscm_people.json) | [`data/processed/slscm_people.json`](file:///home/orlab/Minh_ALL/td_bnc/website/data/processed/slscm_people.json) | Lãnh đạo lab, Giảng viên, Nghiên cứu viên trẻ, Sinh viên, Hall of Fame, Alumni, Đối tác quốc tế. |
-| 📚 **Công bố khoa học** | [`web/src/data/slscm_publications.json`](file:///home/orlab/Minh_ALL/td_bnc/website/web/src/data/slscm_publications.json) | [`data/processed/slscm_publications.json`](file:///home/orlab/Minh_ALL/td_bnc/website/data/processed/slscm_publications.json) | Kho công bố khoa học (Research Vault 19+ records), bộ lọc Journal/Conference, tìm kiếm DOI và xuất trích dẫn BibTeX. |
-| 📰 **Sự kiện & Tin tức** | [`web/src/data/slscm_facebook_posts.json`](file:///home/orlab/Minh_ALL/td_bnc/website/web/src/data/slscm_facebook_posts.json) | [`data/processed/slscm_facebook_posts.json`](file:///home/orlab/Minh_ALL/td_bnc/website/data/processed/slscm_facebook_posts.json) | Mục **Lab Life / News Digest**: Tin tức bài báo mới, workshop, tuyển sinh nghiên cứu, sự kiện học thuật từ kênh Facebook. |
-| 🔬 **Dự án & Đề tài** | [`web/src/data/slscm_projects.json`](file:///home/orlab/Minh_ALL/td_bnc/website/web/src/data/slscm_projects.json) | [`data/processed/slscm_projects.json`](file:///home/orlab/Minh_ALL/td_bnc/website/data/processed/slscm_projects.json) | Mục **Impact & Projects**: Các đề tài NCKH cấp cơ sở, dự án liên lab (CADA & SLSCM Smart Water), hợp tác doanh nghiệp. |
-| 📊 **Tổng quan & Số liệu** | [`web/src/data/slscm_overview.json`](file:///home/orlab/Minh_ALL/td_bnc/website/web/src/data/slscm_overview.json) | [`data/processed/slscm_overview.json`](file:///home/orlab/Minh_ALL/td_bnc/website/data/processed/slscm_overview.json) | Các bộ đếm ở trang chủ (Số bài Q1, Số học bổng PhD, Trụ cột nghiên cứu, thông tin liên hệ). |
-| 🖼️ **Ảnh & Tư liệu** | [`web/public/assets/images/`](file:///home/orlab/Minh_ALL/td_bnc/website/web/public/assets/images/) | Không áp dụng | Ảnh chân dung thành viên ([`people/`](file:///home/orlab/Minh_ALL/td_bnc/website/web/public/assets/images/people/)), logo lab, poster sự kiện. |
+| 👥 **Thành viên & Cựu SV** | [`web/src/data/slscm_people.json`](file:///home/orlab/Minh_ALL/website/web/src/data/slscm_people.json) | [`data/processed/slscm_people.json`](file:///home/orlab/Minh_ALL/website/data/processed/slscm_people.json) | Lãnh đạo lab, Giảng viên, Nghiên cứu viên trẻ, Sinh viên, Hall of Fame, Alumni, Đối tác quốc tế. |
+| 📚 **Công bố khoa học** | [`web/src/data/slscm_publications.json`](file:///home/orlab/Minh_ALL/website/web/src/data/slscm_publications.json) | [`data/processed/slscm_publications.json`](file:///home/orlab/Minh_ALL/website/data/processed/slscm_publications.json) | Kho công bố khoa học (Research Vault 19+ records), bộ lọc Journal/Conference, tìm kiếm DOI và xuất trích dẫn BibTeX. |
+| 📰 **Sự kiện & Tin tức** | [`web/src/data/slscm_facebook_posts.json`](file:///home/orlab/Minh_ALL/website/web/src/data/slscm_facebook_posts.json) | [`data/processed/slscm_facebook_posts.json`](file:///home/orlab/Minh_ALL/website/data/processed/slscm_facebook_posts.json) | Mục **Lab Life / News Digest**: Tin tức bài báo mới, workshop, tuyển sinh nghiên cứu, sự kiện học thuật từ kênh Facebook. |
+| 🔬 **Dự án & Đề tài** | [`web/src/data/slscm_projects.json`](file:///home/orlab/Minh_ALL/website/web/src/data/slscm_projects.json) | [`data/processed/slscm_projects.json`](file:///home/orlab/Minh_ALL/website/data/processed/slscm_projects.json) | Mục **Impact & Projects**: Các đề tài NCKH cấp cơ sở, dự án liên lab (CADA & SLSCM Smart Water), hợp tác doanh nghiệp. |
+| 📊 **Tổng quan & Số liệu** | [`web/src/data/slscm_overview.json`](file:///home/orlab/Minh_ALL/website/web/src/data/slscm_overview.json) | [`data/processed/slscm_overview.json`](file:///home/orlab/Minh_ALL/website/data/processed/slscm_overview.json) | Các bộ đếm ở trang chủ (Số bài Q1, Số học bổng PhD, Trụ cột nghiên cứu, thông tin liên hệ). |
+| 🖼️ **Ảnh & Tư liệu** | [`web/public/assets/images/`](file:///home/orlab/Minh_ALL/website/web/public/assets/images/) | Không áp dụng | Ảnh chân dung thành viên ([`people/`](file:///home/orlab/Minh_ALL/website/web/public/assets/images/people/)), logo lab, poster sự kiện. |
 
 ---
 
@@ -26,15 +26,15 @@ Hệ thống sử dụng cơ chế Monorepo với 2 vị trí file:
 Khi thêm mới hoặc chỉnh sửa dữ liệu, cần tuân thủ 5 nguyên tắc bắt buộc sau:
 
 1. **Nguyên tắc song phương (Dual Sync)**:
-   - Mọi thay đổi dữ liệu phải được thực hiện trên file nguồn [`web/src/data/`](file:///home/orlab/Minh_ALL/td_bnc/website/web/src/data/) và sao chép tương ứng sang [`data/processed/`](file:///home/orlab/Minh_ALL/td_bnc/website/data/processed/).
+   - Mọi thay đổi dữ liệu phải được thực hiện trên file nguồn [`web/src/data/`](file:///home/orlab/Minh_ALL/website/web/src/data/) và sao chép tương ứng sang [`data/processed/`](file:///home/orlab/Minh_ALL/website/data/processed/).
 2. **Quy tắc định danh duy nhất (`id`)**:
    - Trường `id` phải viết thường, cách nhau bằng dấu gạch ngang (kebab-case), mang tính gợi nhớ (Ví dụ: `le-2026-cfl-ijoc`, `alumni-nguyen-tat-dat`, `hanoi-smart-water-network`).
 3. **Quy tắc song ngữ (Bilingual Convention)**:
    - Các trường văn bản nên cung cấp song ngữ: đuôi `_vi` (tiếng Việt) và `_en` (tiếng Anh) để đảm bảo giao diện hiển thị chuẩn học thuật quốc tế.
 4. **Quy tắc xử lý ảnh đại diện trống**:
-   - Nếu thành viên chưa có file ảnh chân dung trong thư mục [`web/public/assets/images/people/`](file:///home/orlab/Minh_ALL/td_bnc/website/web/public/assets/images/people/), hãy đặt giá trị `"avatar": ""`. Giao diện website sẽ **tự động vẽ avatar gradient mềm mại cùng chữ cái đầu** mà không bị lỗi ảnh vỡ.
+   - Nếu thành viên chưa có file ảnh chân dung trong thư mục [`web/public/assets/images/people/`](file:///home/orlab/Minh_ALL/website/web/public/assets/images/people/), hãy đặt giá trị `"avatar": ""`. Giao diện website sẽ **tự động vẽ avatar gradient mềm mại cùng chữ cái đầu** mà không bị lỗi ảnh vỡ.
 5. **Quy tắc đồng bộ số liệu Counter**:
-   - Khi thêm bài báo mới hoặc thành viên nhận học bổng PhD mới, cần cập nhật tăng số đếm tương ứng trong file [`slscm_overview.json`](file:///home/orlab/Minh_ALL/td_bnc/website/web/src/data/slscm_overview.json) để các counter ở trang chủ nhảy số chính xác.
+   - Khi thêm bài báo mới hoặc thành viên nhận học bổng PhD mới, cần cập nhật tăng số đếm tương ứng trong file [`slscm_overview.json`](file:///home/orlab/Minh_ALL/website/web/src/data/slscm_overview.json) để các counter ở trang chủ nhảy số chính xác.
 
 ---
 

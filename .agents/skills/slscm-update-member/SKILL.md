@@ -29,11 +29,11 @@ This skill defines the standardized protocol for updating faculty, student resea
 
 ### Step 1: Prepare Member Profile Data
 - `id`: kebab-case (e.g. `alumni-nguyen-tat-dat`).
-- `avatar`: Path to square portrait in [`web/public/assets/images/people/<id>.jpg`](file:///home/orlab/Minh_ALL/td_bnc/website/web/public/assets/images/people/). If none exists, leave `""` (the frontend automatically renders a soft gradient with initial letter).
+- `avatar`: Path to square portrait in [`web/public/assets/images/people/<id>.jpg`](file:///home/orlab/Minh_ALL/website/web/public/assets/images/people/). If none exists, leave `""` (the frontend automatically renders a soft gradient with initial letter).
 - Bilingual fields: `name`, `name_en`, `title_vi`, `title_en`, `bio_en`, `current_status`.
 
 ### Step 2: Supabase Migration
-Generate a migration in [`supabase/migrations/`](file:///home/orlab/Minh_ALL/td_bnc/website/supabase/migrations/):
+Generate a migration in [`supabase/migrations/`](file:///home/orlab/Minh_ALL/website/supabase/migrations/):
 ```sql
 INSERT INTO public.people (
   id, name, name_en, title, role_badge, category,
@@ -66,10 +66,10 @@ supabase db push --linked
 ```
 
 ### Step 3: SQLite & JSON Mirroring
-1. Insert / Update [`database/slscm.sqlite`](file:///home/orlab/Minh_ALL/td_bnc/website/database/slscm.sqlite) (`people`, `person_research_interests`, `person_featured_publications`, `achievements`).
-2. Update [`web/src/data/slscm_people.json`](file:///home/orlab/Minh_ALL/td_bnc/website/web/src/data/slscm_people.json) and [`data/processed/slscm_people.json`](file:///home/orlab/Minh_ALL/td_bnc/website/data/processed/slscm_people.json).
+1. Insert / Update [`database/slscm.sqlite`](file:///home/orlab/Minh_ALL/website/database/slscm.sqlite) (`people`, `person_research_interests`, `person_featured_publications`, `achievements`).
+2. Update [`web/src/data/slscm_people.json`](file:///home/orlab/Minh_ALL/website/web/src/data/slscm_people.json) and [`data/processed/slscm_people.json`](file:///home/orlab/Minh_ALL/website/data/processed/slscm_people.json).
 3. If new PhD scholarship or valedictorian:
-   - Increment counters in [`web/src/data/slscm_overview.json`](file:///home/orlab/Minh_ALL/td_bnc/website/web/src/data/slscm_overview.json) (`phd_msc_scholarships`, `valedictorians`).
+   - Increment counters in [`web/src/data/slscm_overview.json`](file:///home/orlab/Minh_ALL/website/web/src/data/slscm_overview.json) (`phd_msc_scholarships`, `valedictorians`).
 4. Re-export generated build datasets:
    ```bash
    python3 database/scripts/export_data.py

@@ -23,24 +23,24 @@ This directory provides standardized Antigravity skills and automated CLI script
 
 ## Available Skills & Runbooks
 
-1. [**`slscm-update-publication`**](file:///home/orlab/Minh_ALL/td_bnc/website/.agents/skills/slscm-update-publication/SKILL.md)
+1. [**`slscm-update-publication`**](file:///home/orlab/Minh_ALL/website/.agents/skills/slscm-update-publication/SKILL.md)
    - Automated DOI harvesting (Crossref, OpenAlex, SpringerLink, BibTeX).
    - Resolves and highlights SLSCM Lab authors.
    - Pushes Supabase migration and syncs SQLite & JSON datasets.
 
-2. [**`slscm-update-brief`**](file:///home/orlab/Minh_ALL/td_bnc/website/.agents/skills/slscm-update-brief/SKILL.md)
+2. [**`slscm-update-brief`**](file:///home/orlab/Minh_ALL/website/.agents/skills/slscm-update-brief/SKILL.md)
    - Authors bilingual news briefs (English & Vietnamese).
    - Updates Homepage carousel and Events archive page (`/events`).
    - Syncs Facebook feed digest (`social_posts`).
 
-3. [**`slscm-update-topic`**](file:///home/orlab/Minh_ALL/td_bnc/website/.agents/skills/slscm-update-topic/SKILL.md)
+3. [**`slscm-update-topic`**](file:///home/orlab/Minh_ALL/website/.agents/skills/slscm-update-topic/SKILL.md)
    - Manages research pillars: `supply_chain_optimization`, `ai_supply_chain_intelligence`, `decision_analytics`.
    - Adds topic keywords to `research_keywords.json` and `ResearchTopicsPage.tsx`.
 
-4. [**`slscm-update-member`**](file:///home/orlab/Minh_ALL/td_bnc/website/.agents/skills/slscm-update-member/SKILL.md)
+4. [**`slscm-update-member`**](file:///home/orlab/Minh_ALL/website/.agents/skills/slscm-update-member/SKILL.md)
    - Updates faculty, student researchers, and global placements (SMU, LJMU, UConn, Warwick).
    - Enforces avatar fallbacks and bilingual profiles.
 
-5. [**`slscm-deploy-production`**](file:///home/orlab/Minh_ALL/td_bnc/website/.agents/skills/slscm-deploy-production/SKILL.md)
+5. [**`slscm-deploy-production`**](file:///home/orlab/Minh_ALL/website/.agents/skills/slscm-deploy-production/SKILL.md)
    - Verifies frontend build.
    - Runs `./scripts/sync_to_production.sh` to subtree split, re-sign commits with SSH key, and push to GitHub Pages and Vercel.

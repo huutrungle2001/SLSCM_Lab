@@ -13,7 +13,7 @@ This skill defines the standardized protocol and automated workflow for catalogi
 
 ## Quick Automated Execution
 
-A pre-built harvester and synchronizer is provided at [scripts/add_publication.py](file:///home/orlab/Minh_ALL/td_bnc/website/.agents/skills/slscm-update-publication/scripts/add_publication.py).
+A pre-built harvester and synchronizer is provided at [scripts/add_publication.py](file:///home/orlab/Minh_ALL/website/.agents/skills/slscm-update-publication/scripts/add_publication.py).
 
 ### 1. Dry Run / Preview
 ```bash
@@ -49,7 +49,7 @@ Strictly adhere to author-written abstracts (no fabricated summaries):
 4. **Tier 4 — BibTeX**: `curl -sLH "Accept: application/x-bibtex" https://doi.org/{doi}`.
 
 ### Step 2: Supabase Migration & Remote Execution
-Create a versioned migration under [`supabase/migrations/`](file:///home/orlab/Minh_ALL/td_bnc/website/supabase/migrations/):
+Create a versioned migration under [`supabase/migrations/`](file:///home/orlab/Minh_ALL/website/supabase/migrations/):
 ```sql
 -- Format: <YYYYMMDDHHMMSS>_add_<pub_id>.sql
 INSERT INTO public.publications (
@@ -67,11 +67,11 @@ supabase db push --linked
 ```
 
 ### Step 3: Local SQLite Sync
-Update [`database/slscm.sqlite`](file:///home/orlab/Minh_ALL/td_bnc/website/database/slscm.sqlite) using SQLite Python API so local dev and offline tests remain functional.
+Update [`database/slscm.sqlite`](file:///home/orlab/Minh_ALL/website/database/slscm.sqlite) using SQLite Python API so local dev and offline tests remain functional.
 
 ### Step 4: Frontend Data & Build Artifacts Sync
-1. Prepend publication to [`web/src/data/slscm_publications.json`](file:///home/orlab/Minh_ALL/td_bnc/website/web/src/data/slscm_publications.json) and [`data/processed/slscm_publications.json`](file:///home/orlab/Minh_ALL/td_bnc/website/data/processed/slscm_publications.json).
-2. Increment `total_publications` and `journal_articles` in [`web/src/data/slscm_overview.json`](file:///home/orlab/Minh_ALL/td_bnc/website/web/src/data/slscm_overview.json).
+1. Prepend publication to [`web/src/data/slscm_publications.json`](file:///home/orlab/Minh_ALL/website/web/src/data/slscm_publications.json) and [`data/processed/slscm_publications.json`](file:///home/orlab/Minh_ALL/website/data/processed/slscm_publications.json).
+2. Increment `total_publications` and `journal_articles` in [`web/src/data/slscm_overview.json`](file:///home/orlab/Minh_ALL/website/web/src/data/slscm_overview.json).
 3. Re-export generated build artifacts:
    ```bash
    python3 database/scripts/export_data.py
