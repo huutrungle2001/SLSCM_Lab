@@ -59,6 +59,16 @@ def main():
     parser.add_argument("--dry-run", action="store_true", help="Preview only, do not write")
     args = parser.parse_args()
 
+    def unescape_text(s: str) -> str:
+        if not s:
+            return s
+        return s.replace('\\r\\n', '\n').replace('\\n', '\n')
+
+    summary_clean = unescape_text(args.summary)
+    summary_vi_clean = unescape_text(args.summary_vi) or summary_clean
+    content_clean = unescape_text(args.content) or summary_clean
+    content_vi_clean = unescape_text(args.content_vi) or summary_vi_clean
+
     tags_list = [t.strip() for t in args.tags.split(",") if t.strip()]
     now_ts = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
 
@@ -86,10 +96,10 @@ def main():
     cat_esc = args.category.replace("'", "''")
     cat_vi_esc = (args.category_vi or args.category).replace("'", "''")
     badge_esc = args.badge.replace("'", "''")
-    sum_esc = args.summary.replace("'", "''")
-    sum_vi_esc = (args.summary_vi or args.summary).replace("'", "''")
-    content_esc = (args.content or args.summary).replace("'", "''")
-    content_vi_esc = (args.content_vi or args.summary_vi or args.summary).replace("'", "''")
+    sum_esc = summary_clean.replace("'", "''")
+    sum_vi_esc = summary_vi_clean.replace("'", "''")
+    content_esc = content_clean.replace("'", "''")
+    content_vi_esc = content_vi_clean.replace("'", "''")
     link_esc = args.link.replace("'", "''")
     link_label_esc = args.link_label.replace("'", "''")
 
@@ -175,8 +185,8 @@ ON CONFLICT (event_id, tag) DO NOTHING;
       link_label=excluded.link_label, featured=excluded.featured
     """, (
         args.id, args.title, args.title_vi, args.date, args.category, args.category_vi or args.category,
-        args.badge, args.summary, args.summary, args.summary_vi or args.summary,
-        args.content or args.summary, args.content_vi or args.summary_vi or args.summary,
+        args.badge, summary_clean, summary_clean, summary_vi_clean,
+        content_clean, content_vi_clean,
         args.link, args.link_label, 1 if args.featured else 0
     ))
     c.execute("DELETE FROM event_tags WHERE event_id = ?", (args.id,))
